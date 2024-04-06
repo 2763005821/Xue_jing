@@ -1,0 +1,136 @@
+.logo{
+	position: fixed;
+	z-index: 2;
+	top: 10px;
+	left: 30px;
+	}
+.search1{
+	position: fixed;
+	z-index: 2;
+	top: 28px;
+	left: 1000px;
+	}
+form .text {
+	display: inline-block;
+	z-index: 2;
+	border: 0;
+	width: 260px;
+	height: 35px;
+	font-size: 14px;
+	outline: none;
+	 
+	border: 2px solid #0084ff;
+}
+                
+form .search_main {
+	 position: relative;
+					z-index: 2;
+					top: 2px;
+	 width: 90px;
+	 height: 36px;
+	 border: 0;
+	 outline: none;
+	 cursor: pointer;
+	 text-align: center;
+	 line-height: 40px;
+	 background-color: #0084ff;
+	 color: #FFFFFF;
+					
+}
+	.white_bar{
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 85px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200), -5px -5px 10px RGB(150,150,150);
+	}
+	 
+.upload{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1410px;
+	}
+.messages{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1485px;
+	}
+.settings{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1560px;
+	}
+.share{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1635px;
+	}
+.favorite{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1710px;
+	}
+.myself{
+	 position: fixed;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1785px;
+	}
+/*左上功能表*/
+.all_function{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 250px;
+	 }
+.subject_frontier{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 370px;
+}
+.subject_outline{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 480px;
+}
+.experiment{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 590px;
+}
+.bio_graph{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 700px;
+}
+.AI_search{
+	 position: fixed;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 810px;
+}/*
+.about_us{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 850px;
+}*/

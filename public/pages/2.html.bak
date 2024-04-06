@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div Fade Example</title>
+<style>
+  .fade-box {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    transition: opacity 1s; /* 设置渐变效果 */
+    opacity: 0; /* 初始化透明度为0，即不可见 */
+  }
+  
+  .container:hover .fade-box {
+    opacity: 1; /* 鼠标经过时设置透明度为1，即可见 */
+  }
+</style>
+</head>
+<body>
+ 
+<div class="container">
+  鼠标经过我
+  <div class="fade-box"></div>
+</div>
+ 
+</body>
+</html>

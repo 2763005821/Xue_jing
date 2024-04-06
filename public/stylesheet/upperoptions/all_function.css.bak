@@ -1,0 +1,18 @@
+.all_function_memu{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 90%;
+
+}
+.all_function_memu_item1{
+	list-style-type: none; /* 去除小黑点 */
+	margin: 5px;
+	float: left;
+}
+.all_function_memu_item{
+	width: 300px;
+	height: 40px;
+	border: 1px solid black;
+
+}

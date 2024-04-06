@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>渐变原位切换背景图像</title>
+<style>
+  .background-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-position: center;
+	animation: fadeInOut 5s 1;
+  }
+ 
+	@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+  }
+	20% {
+		opacity: 0;
+  }
+	40%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 0;
+		background-image: url('../images/back1.png');
+	};
+	80%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body>
+ 
+<div class="background-container"></div>
+ 
+</body>
+</html>

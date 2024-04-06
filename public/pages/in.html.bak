@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+ 
+.background-image {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 5s ease-in-out;
+  animation: fadeInOut 10s infinite;
+}
+ 
+.image1 {
+  background-image: url('../images/back1.png');
+  opacity: 1;
+}
+ 
+.image2 {
+  background-image: url('../images/back.jpg');
+  opacity: 1;
+  left: 100%;
+}
+ 
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    left: -100%;
+  }
+  50% {
+    opacity: 1;
+ /*   left: 100%;*/
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="background-container">
+  <div class="background-image image1"></div>
+  <div class="background-image image2"></div>
+</div>
+
+</body>
+
+
+</html>

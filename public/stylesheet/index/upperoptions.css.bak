@@ -1,0 +1,294 @@
+.logo{
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left: 30px;
+	}
+.search1{
+	position: absolute;
+	z-index: 2;
+	top: 28px;
+	left: 1000px;
+	}
+form .text {
+	display: inline-block;
+	z-index: 2;
+	border: 0;
+	width: 260px;
+	height: 35px;
+	font-size: 14px;
+	outline: none;
+	 
+	border: 2px solid #0084ff;
+}
+                
+form .search_main {
+	 position: relative;
+					z-index: 2;
+					top: 2px;
+	 width: 90px;
+	 height: 36px;
+	 border: 0;
+	 outline: none;
+	 cursor: pointer;
+	 text-align: center;
+	 line-height: 40px;
+	 background-color: #0084ff;
+	 color: #FFFFFF;
+					
+}
+	.white_bar{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 95px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200), -5px -5px 10px RGB(150,150,150);
+	}
+	 
+.upload{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1410px;
+	}
+.messages{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1485px;
+	}
+.settings{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1560px;
+	}
+.share{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1635px;
+	}
+.favorite{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1710px;
+	}
+.myself{
+	 position: absolute;
+	 z-index: 2;
+	 top: 30px;
+	 left: 1785px;
+	}
+/*左上功能表*/
+.all_function{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top: 35px;
+	 left: 250px;
+}.dropdown-content {
+    display: none; /* 初始状态下不显示下拉菜单 */
+    position: relative;
+	top: 30px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+ 
+.show {
+    display: block; /* 显示下拉菜单 */
+}
+/***********/
+.subject_frontier{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 370px;
+}
+.subject_outline{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 480px;
+}
+.experiment{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 590px;
+}
+.bio_graph{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 700px;
+}
+.AI_search{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 810px;
+}/*
+.about_us{
+	 position: absolute;
+	 font-size: 18px;
+	 z-index: 2;
+	 top:35px;
+	 left: 850px;
+}*/
+/***********************************************************************************/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+ 
+.dropdown-content a:hover {background-color: #f1f1f1}
+.all_function:hover .dropdown-content{
+	  display: block;
+
+}
+/*****************************************************************************/
+.navigation
+{
+	z-index: 5;
+	position: absolute;
+	top: -25px;
+	left: 200px;
+  margin-left:-10px
+}
+
+.navigation li
+{
+  display:inline;
+  float:left;
+  margin-left:10px;
+  position:relative
+  
+}
+.navigation li a
+{
+  border-radius:0 0 8px 8px;
+  color: RGB(10,10,10);
+  display:block;
+  font-size:18px;
+  height:38px;
+  line-height:31px;
+  padding:42px 16px 0;
+  text-decoration:none
+}
+.navigation li:hover a{
+  background:transparent url(images/nav_hover.html) no-repeat scroll;
+
+  float:left;
+}
+.navigation li ul
+{
+  -moz-opacity:0.90;
+  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  /*设置导航栏下拉菜单背景颜色*/
+  background: white;
+  border-radius:5px;
+  display:block;
+  left:0;
+  margin-top:11px;
+  opacity:0.90;
+  padding-left:5px;
+  padding-right:10px;
+  position:absolute;
+  visibility:hidden;
+  z-index:9999
+}
+.navigation li:hover ul
+{
+  visibility:visible;
+}
+.navigation li ul li
+{
+  border-bottom:1px solid #292929;
+  display:block;
+  float:none;
+  height:40px;
+}
+.navigation li ul li:last-child
+{
+  border:none
+}
+.navigation li ul li a
+{
+  background:none!important;
+  /*设置导航栏下拉菜单字体颜色*/
+  color: black;
+  float:none!important;
+  font-size:15px;
+  height:40px;
+  line-height:40px;
+  min-width:190px;
+  padding:0!important;
+  width:100%;
+
+}
+.navigation li ul li a:hover
+{
+
+}
+.navigation li ul li ul
+{
+  left:203px;
+  padding-left:1px;
+  padding-top:0;
+  top:0;
+  visibility:hidden!important
+}
+.navigation li ul li:hover ul
+{
+  visibility:visible!important
+}
+.navigation li ul .sf-sub-indicator
+{
+  background:transparent url(images/nav_arrow.html) no-repeat scroll;
+  display:block;
+  height:10px;
+  position:absolute;
+  right:6px;
+  text-indent:-3000px;
+  top:11px;
+  width:7px
+}
+.navigation > ul > li > ul{
+	  position:absolute;
+	  top:100px;
+    transition: opacity 0.5s; /* 设置渐变效果 */
+	transition : 1s;
+    opacity: 0; /* 初始化透明度为0，即不可见 */
+}
+.navigation > ul > li:hover ul{
+	  position:absolute;
+	  top:100px;
+	opacity: 1; /* 鼠标经过时设置透明度为1，即可见 */
+}
+.navigation > ul > li > ul > li:hover{
+	/*悬停下拉菜单背景色*/
+	background-color: RGB(235,235,235);
+}

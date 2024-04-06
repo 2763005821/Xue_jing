@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>学境</title>
+	<link rel="stylesheet"href="../../stylesheet/index/delete_format.css">					<!--暂无-->
+	<link rel="stylesheet"href="../../stylesheet/index/background.css">					<!--背景切换-->
+	<link rel="stylesheet"href="../../stylesheet/index/upperoptions.css">					<!--上横幅及上选项-->
+	<link rel="stylesheet"href="../../stylesheet/article_group/article_group.css">					<!--上横幅及上选项-->
+
+	<style>
+	.logo{
+		position: absolute;
+		z-index: 2;
+		top: 10px;
+		left: 30px;
+	}
+	.all > .upper_options div{
+	}
+
+	
+
+	</style>
+</head>
+
+<body>
+	<!--网页全体-->
+	<div class="all">
+		<!--左上角logo-->
+		<div class="logo">
+			<img class="logo_1"style="float: left;"src="../../icons/logo_main7.png" alt="flag"></div>
+		<!--白色导航栏/upperoptions.css-->
+		<div class="white_bar"></div>
+		<form class="search1"target="_blank" method="get" action="https://www.baidu.com/s">
+				<input type="text" placeholder="请输入关键词" name="word" class="text"/>
+				<input type="submit" value="搜索" class="search_main"></form>
+		<!--右上角选项-/upperoptions.css->
+		<div class="upper_options">
+			<a href="./upperoptions/search.html"title=""style="text-decoration: none; color: black">
+				<img class="search"src="../icons/search.png"></a>
+			<!--精简代码/upperoptions.css-->
+			<div class="upload"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/upload2.png"></a></div>
+			<div class="messages"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/message.png"></a></div>
+			<div class="settings"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/settings.png"></a></div>
+			<div class="share"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/share.png"></a></div>
+			<div class="favorite"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/favorite.png"></a></div>
+			<div class="myself"><a href=""title=""style="text-decoration: none; color: black">
+				<img class="upload_1"src="../../icons/myself.png"></a></div>
+			<!--导航栏选项/upperoptions.cxx-->
+			<div class="all_function"><a href=""title=""style="text-decoration: none; color: black">全部功能</div>
+			<div class="subject_frontier"><a href=""title=""style="text-decoration: none; color: black">学科前沿</div>
+			<div class="subject_outline"><a href=""title=""style="text-decoration: none; color: black">学科脉络</div>
+			<div class="experiment"><a href=""title=""style="text-decoration: none; color: black">实验共享</div>
+			<div class="bio_graph"><a href=""title=""style="text-decoration: none; color: black">生物图鉴</div>
+			<div class="AI_search"><a href="./upperoptions/search.html"title=""style="text-decoration: none; color: black">智能检索</div>
+	<!--	<div class="about_us"><a href=""title=""style="text-decoration: none; color: black">关于我们</div> -->
+		</div>
+
+		<!--文章主体-->
+		<div class="top_articles_items">
+			<p>dtug discovery</p>
+			<p class="title">Nat Rev | 罗氏制药：双特异性抗体用于癌症治疗</p>
+			
+			
+		</div>		
+		
+			
+	</div>
+</body>
+</html>

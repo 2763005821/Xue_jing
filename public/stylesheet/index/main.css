@@ -1,0 +1,430 @@
+.welcome{
+	position: absolute;
+	z-index: 1;
+	top: 250px;
+	left: 345px;
+	height: 350px;
+	width: 1260px;
+	border-radius: 20px;
+	background-color: RGB(0,0,0);
+	opacity: 0.48;
+	
+}
+.welcome_words{
+	position: absolute;
+	padding: 0px;
+	z-index: 3;
+	top: 245px;
+	left: 750px;
+}
+.welcome_title{
+	color: white;
+	font-size: 42px;
+	letter-spacing: 30px;
+	font-family:"幼圆"; 
+
+}
+.welcome_solgon{
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-size: 19px;
+	letter-spacing: 14.2px;
+	font-family:"等线"; 
+}
+.welcome_text{
+	color: white;
+	width: 100%;
+	position: relative;
+	left: -360px;
+	line-height: 1.3;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+.welcome_link{
+	position: relative;
+	left: 130px;
+	padding: 12px;
+	width: 120px;
+	text-align: center;
+	background-color: white;
+	color: RGB(55,72,200);	
+	font-size: 21px;
+	border-radius: 15px;
+	letter-spacing: 2px;
+	transition: transform 0.3s ease; /* 平滑变化 */
+}
+.welcome_link:hover{
+	transform: scale(1.05);
+}
+/********************************主选项****************************/
+.resourse{
+	position: absolute;
+	top: 600px;
+	left: 230px;
+	width: 300px;
+	}
+.resourse_background{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color:  RGB(29,116,184);
+	border-radius: 10px;
+	opacity: 0.7;
+	}
+.plan{
+	position: absolute;
+	top: 600px;
+	left: 530px;
+	width: 300px;
+	}
+.plan_background{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color:  RGB(50,200,200);
+	border-radius: 10px;
+	opacity: 0.7;
+	}
+.explore{
+	position: absolute;
+	top: 600px;
+	left: 830px;
+	width: 300px;
+	}
+.explore_background{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color:  RGB(70,200,160);
+	border-radius: 10px;
+	opacity: 0.7;
+	}
+.academic{
+	position: absolute;
+	top: 600px;
+	left: 1130px;
+	width: 300px;
+	}
+.academic_background{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color:  RGB(116,175,50);
+	border-radius: 10px;
+	opacity: 0.7;
+	}
+.academic_img{				/*这一个样式控制五个*/
+	position: relative;
+	top: -250px;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	transition: transform 0.3s ease; /* 平滑变化 */
+	}
+.academic_img:hover{
+	transform: scale(1.05);
+}
+.academic_tite{			/*这一个样式控制五个*/
+	position: relative;
+	top: -230px;
+	margin: 0 auto;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	font-size: 20px;
+	letter-spacing: 5px;
+	}
+
+.coming_soon{
+	position: absolute;
+	top: 600px;
+	left: 1430px;
+	width: 300px;
+	}
+.coming_soon_background{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color:  RGB(180,50,220);
+	border-radius: 10px;
+	opacity: 0.7;
+	}
+
+.padding_line{
+	position: relative;
+	top: 1100px;
+	left: 100px;
+	width: 1700px;
+	z-index: 3;
+}
+
+
+.top_articles{
+	position: relative;
+	top: 1100px;
+	left: 5.1%;
+	width: 94.9%;
+	z-index: 3;
+}
+.top_articles_items{
+	position: relative;
+	width: 94.9%;
+	top: 1100px;
+	left: 5.1%;
+}
+.top_articles_items_imgs{
+	position: relative;
+	transition: transform 0.3s ease; /* 平滑变化 */
+}
+.top_articles_items_imgs:hover{
+		transform: scale(1.05);
+}
+.top_articles_items_1_title{
+	font-size: 20px;
+	font-weight: bold;
+	width: 450px;
+}
+.top_articles_items_1{
+	margin: 50px 180px 50px 0px;
+	float: left;
+	position: relative;
+}
+.top_articles_items_2{
+	margin: 50px 180px 50px 0px;
+	float: left;
+	position: relative;
+}
+.top_articles_items_3{
+	margin: 50px 0px 50px 0px;
+	float: left;
+	position: relative;
+}
+
+.web_essentials{
+	position: relative;
+	z-index: -1;
+	top: 900px;
+	left: 0%;
+}
+.web_essentials_background{
+	background-color: black; 
+	width: 100%;
+	height: 800px;
+	position: relative;
+	top: 1120px;
+	left: 0px;
+}
+.web_essentials_img
+{
+	position:relative;
+	top:400px;
+	left:0px;
+	z-index: 3;
+}
+.web_essentials_title
+{
+	color: white;
+	font-size: 22px;
+	letter-spacing: 5px;
+	position: relative;
+	width: 30%;
+	top: 0;
+	left: 62%
+}
+.web_essentials_title_1{
+	color: white;
+	font-size: 32px;
+	letter-spacing:10px;
+	position: relative;
+	top: 30px;
+	left: 1050px;
+	width: 700px;
+	text-align: center;
+}
+.web_essentials_text{
+	color: white;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: relative;
+	top: 50px;
+	left: 1050px;
+	width: 700px;
+	text-align: center;
+	line-height: 1.5;
+}
+.web_essentials_p{
+	border: 1px solid white;
+	color:white;
+	font-size: 22px;
+	border-radius: 20px;
+	letter-spacing:10px;
+	position:relative;
+	top:70px;
+	left:1240px;
+	width:300px;
+	text-align:center;
+}
+.end{
+	z-index: 1;
+	position: absolute;
+	top: 3020px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: RGB(246,246,246);
+}
+.end_text{
+	position: relative;
+	color: RGB(90,90,90);
+	top: 30%;
+	left: 12%;
+	width: 85%;
+	font-size: 15px;
+}
+.end_logo{
+	position: relative;
+	top: 30%;
+	left: 12%;
+	width: 6%;
+	height: 40%;
+}
+.end_back_to_top{
+	position: relative;
+	top: 0%;
+	left: 80%;
+	width: 6%;
+	height: 40%;
+	font-size: 15px;
+}
+.end_back_to_top:hover{
+	opacity: 0.75;
+}
+/*************************************************************重置top_articles******************************/
+
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 华为案例开始 */
+.huawei{
+    width: 1130px;
+    height: 100%;
+    margin: 40px auto;
+}
+.huawei ul{
+	position: absolute;
+	top: 1110px;
+	left: 85px;
+}
+.huawei > ul > #arcticle3{
+	margin-right: 0px;
+}
+.huawei li{
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 253px;
+    margin-right: 150px;
+	margin-top: 100px;
+    overflow: hidden;/*容器外隐藏*/
+}
+.huawei li:last-child{
+    margin-right: 0;
+}
+.pic{
+    position: relative;
+}
+.pic img{
+    width: 450px;
+    height: 253px;
+    transition: all .5s;
+}
+.mask{/*图片遮罩*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(/*渐变背景*/
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.3)
+    );
+    /* opacity: 0.4;透明 */
+}
+.txt{
+    position: absolute;
+    bottom: -50px;
+    width: 450px;
+    height: 140px;
+    padding: 0 30px;
+    color: rgb(255, 255, 255);
+    transition: all .5s;
+}
+.category{
+    font-size: 0.91em;/*相对度量单位*/
+    line-height: 1.8em;
+}
+.title{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+.content{
+    font-size: 0.875em;
+    line-height: 1.8em;
+    opacity: 0.7;
+    margin-bottom: 12px;
+}
+.read-more{
+    font-size: 0.875em;
+    line-height: 1.875em;
+    vertical-align: middle;/*垂直居中*/
+    opacity: 0;
+    transition: all .5s;
+}
+.icon-xiangyoujiantou{/*字体图标样式*/
+    font-size: 0.875em;
+    line-height: inherit;/*继承行高*/
+    color: #c7000b;
+}
+/* hover之后 */
+.huawei li:hover .mask{/*底部色调变更暗*/
+    height: 100%;
+    background-image: linear-gradient(/*渐变背景*/
+        transparent,
+        rgba(0, 0, 0, 0.7)
+    );
+    opacity: 1;/*不透明*/
+}
+.huawei li:hover .pic img{/*图片缩放*/
+    transform: scale(1.1);/*放大1.1倍*/
+}
+.huawei li:hover .txt{/*文字上移*/
+    bottom: 0;
+}
+.huawei li:hover .read-more{
+    opacity: 1;
+}
+/* 添加一个播放按钮在图片中间，为大部分网站播放样式，仅演示图标居中及变化，图标由小变大由透明变清晰 */
+/*实际使用播放样式时将本示例中的txt块删除即可*/
+.huawei li:last-child .pic::before{
+    content: '';/*before和after伪元素必须添加该属性*/
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-image: url(./play.png);
+    background-size: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.5);/*居中，translate位移数值基于本身大小*/
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+.huawei li:last-child:hover .pic::before{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);/*因前面transform为复合属性写法，所以不能直接transform：scale(1);，会将位移属性覆盖*/
+}

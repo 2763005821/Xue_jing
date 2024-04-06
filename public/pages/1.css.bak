@@ -1,0 +1,112 @@
+.navigation
+{
+  float:left;
+  margin-left:-10px
+}
+
+.navigation li
+{
+  display:inline;
+  float:left;
+  margin-left:10px;
+  position:relative
+}
+
+.navigation li a
+{
+  border-radius:0 0 8px 8px;
+  color:#999;
+  display:block;
+  font-size:16px;
+  height:38px;
+  line-height:31px;
+  padding:42px 16px 0;
+  text-decoration:none
+}
+
+.navigation .sfHover a,.navigation li:hover a
+{
+  background:transparent url(images/nav_hover.html) no-repeat scroll;
+  color:#fff;
+  float:left
+}
+
+.navigation li.active
+{
+  background:#97055a;
+  border-radius:0 0 8px 8px;
+  padding-bottom:5px
+}
+
+.navigation li.active a
+{
+  background:#1a1317;
+  color:#fff;
+  float:left
+}
+
+.navigation li ul
+{
+  -moz-opacity:0.90;
+  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  background:#100b0e;
+  border-radius:5px;
+  display:block;
+  left:0;
+  margin-top:11px;
+  opacity:0.90;
+  padding-left:5px;
+  padding-right:10px;
+  position:absolute;
+  visibility:hidden;
+  z-index:9999
+}
+
+.navigation li:hover ul
+{
+  visibility:visible
+}
+
+.navigation li ul li
+{
+  border-bottom:1px solid #292929;
+  display:block;
+  float:none;
+  height:40px
+}
+
+.navigation li ul li:last-child
+{
+  border:none
+}
+
+.navigation li ul li a
+{
+  background:none!important;
+  color:#999!important;
+  float:none!important;
+  font-size:12px;
+  height:40px;
+  line-height:40px;
+  min-width:190px;
+  padding:0!important;
+  width:100%
+}
+
+.navigation li ul li a:hover
+{
+  color:#fff!important
+}
+
+.navigation li ul li ul
+{
+  left:203px;
+  padding-left:1px;
+  padding-top:0;
+  top:0;
+  visibility:hidden!important
+}
+
+.navigation li ul li:hover ul
+{
+  visibility:visible!important

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list样式</title>
+    <link rel="stylesheet" href="./icon/iconfont.css"><!--引入iconfont下载的字体图标文件-->
+</head>
+<body>
+    <div class="huawei"><!--华为案例-->
+        <ul>
+            <li>
+                <a href=""> 
+                    <div class="pic">
+                        <img  src="list1-01.jpg"/>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="txt">
+                        <div class="category">前沿探索</div>
+                        <div class="title">憧憬6G，共同定义6G</div>
+                        <div class="content">《6G无线通信新征程》序言</div>
+                        <div class="read-more"><span>了解更多</span><span class="iconfont icon-xiangyoujiantou"></span></div>
+                    </div>
+                    
+                </a>
+            </li>
+            <li>
+                <a href=""> 
+                    <div class="pic">
+                        <img  src="list1-02.jpg"/>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="txt">
+                        <div class="category">出版物</div>
+                        <div class="title">“元”年伊始，产业向“新”</div>
+                        <div class="content">2021年ICT领域热点事件盘点</div>
+                        <div class="read-more"><span>了解更多</span><span class="iconfont icon-xiangyoujiantou"></span></div>
+                    </div>
+                    
+                </a>
+            </li>
+            <li>
+                <a href=""> 
+                    <div class="pic">
+                        <img  src="list1-03.jpg"/>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="txt">
+                        <div class="category">全球产业展望</div>
+                        <div class="title">华为发布《智能世界2030》报告</div>
+                        <div class="content">无界探索，翻开未来</div>
+                        <div class="read-more"><span>了解更多</span><span class="iconfont icon-xiangyoujiantou"></span></div>
+                    </div>
+                    
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 华为案例开始 */
+.huawei{
+    width: 1130px;
+    height: 100%;
+    margin: 40px auto;
+}
+ 
+.huawei li{
+    position: relative;
+    float: left;
+    width: 355px;
+    height: 250px;
+    margin-right: 30px;
+    overflow: hidden;/*容器外隐藏*/
+}
+.huawei li:last-child{
+    margin-right: 0;
+}
+.pic{
+    position: relative;
+}
+.pic img{
+    width: 355px;
+    height: 250px;
+    transition: all .5s;
+}
+.mask{/*图片遮罩*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(/*渐变背景*/
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.3)
+    );
+    /* opacity: 0.4;透明 */
+}
+.txt{
+    position: absolute;
+    bottom: -50px;
+    width: 355px;
+    height: 140px;
+    padding: 0 30px;
+    color: rgb(255, 255, 255);
+    transition: all .5s;
+}
+.category{
+    font-size: 0.91em;/*相对度量单位*/
+    line-height: 1.8em;
+}
+.title{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+.content{
+    font-size: 0.875em;
+    line-height: 1.8em;
+    opacity: 0.7;
+    margin-bottom: 12px;
+}
+.read-more{
+    font-size: 0.875em;
+    line-height: 1.875em;
+    vertical-align: middle;/*垂直居中*/
+    opacity: 0;
+    transition: all .5s;
+}
+.icon-xiangyoujiantou{/*字体图标样式*/
+    font-size: 0.875em;
+    line-height: inherit;/*继承行高*/
+    color: #c7000b;
+}
+/* hover之后 */
+.huawei li:hover .mask{/*底部色调变更暗*/
+    height: 100%;
+    background-image: linear-gradient(/*渐变背景*/
+        transparent,
+        rgba(0, 0, 0, 0.7)
+    );
+    opacity: 1;/*不透明*/
+}
+.huawei li:hover .pic img{/*图片缩放*/
+    transform: scale(1.1);/*放大1.1倍*/
+}
+.huawei li:hover .txt{/*文字上移*/
+    bottom: 0;
+}
+.huawei li:hover .read-more{
+    opacity: 1;
+}
+/* 添加一个播放按钮在图片中间，为大部分网站播放样式，仅演示图标居中及变化，图标由小变大由透明变清晰 */
+/*实际使用播放样式时将本示例中的txt块删除即可*/
+.huawei li:last-child .pic::before{
+    content: '';/*before和after伪元素必须添加该属性*/
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-image: url(./play.png);
+    background-size: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.5);/*居中，translate位移数值基于本身大小*/
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+.huawei li:last-child:hover .pic::before{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);/*因前面transform为复合属性写法，所以不能直接transform：scale(1);，会将位移属性覆盖*/
+}
+</style>
