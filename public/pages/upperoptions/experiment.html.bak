@@ -76,13 +76,13 @@
    <a href="./upperoptions/subject_frontier.html">学科前沿</a>
    <div class="clear"></div>
    <ul>
-       <li><a href="portfolio.html">Portfolio 1</a></li>
-       <li><a href="portfolio2.html">Portfolio 2</a></li>
-       <li><a href="portfolio_detail.html">Portfolio Detail 1</a></li>
-       <li><a href="portfolio_detail2.html">Portfolio Detail 2</a></li>
-       <li><a href="portfolio_modern.html">Portfolio Modern</a></li>
-       <li><a href="portfolio_open_column.html">Portfolio Open Column</a></li>
-       <li><a href="portfolio_single.html">Portfolio Single</a></li>
+       <li><a href="portfolio.html">研究论文</a></li>
+       <li><a href="portfolio2.html">新闻</a></li>
+       <li><a href="portfolio_detail.html">观点</a></li>
+       <li><a href="portfolio_detail2.html">研究分析</a></li>
+       <li><a href="portfolio_modern.html">生物学职业生涯</a></li>
+       <li><a href="portfolio_open_column.html">视频</a></li>
+       <li><a href="portfolio_single.html">前沿精选</a></li>
    </ul>
 </li>
 <li>
@@ -105,6 +105,10 @@
 	   <li><a href="blog_detail2.html">微生物学</a></li>
 	   <li><a href="blog_detail2.html">分子生物学</a></li>
 	   <li><a href="blog_detail2.html">神经生物学</a></li>
+	   <li><a href="blog_detail2.html">演化与生态学</a></li>
+	   <li><a href="blog_detail2.html">现代生物技术学</a></li>
+	   <li><a href="blog_detail2.html">生物医学</a></li>
+	   <li><a href="blog_detail2.html">生物信息学</a></li>
    </ul>
 </li>
 <li>
@@ -127,7 +131,43 @@
 			</div>
 
 		<!--主体-->
-	
+	<h1 class="experiment_main_title">学科分类</h1>
+	<div class="experiment_main_text">生物学（biology）是探索生命现象和生命活动规律的科学，是自然科学中的一门基础学科。 其研究对象是生物（包括植物、动物和微生物）的结构、功能、发生和发展规律。</div>
+	<ul class="experiment_main_menu">
+		<li><div class="experiment_main_menu_items">
+					<img class="experiment_main_menu_items_img1"style="float: left;"src="../../images/tete.png" alt="flag">
+					<div class="experiment_main_menu_items_box1">
+						<div class="experiment_main_menu_items_box_title">生物化学</div>
+						<div class="experiment_main_menu_items_box_text1">生物化学，顾名思义是研究生物体中的化学进程的一门学科，常常被简称为生化。 它主要用于研究细胞内各组分，如蛋白质、糖类、脂类、核酸等生物大分子的结构和功能。 </div></div>
+				</div></li>
+		<li><div class="experiment_main_menu_items">
+					<img class="experiment_main_menu_items_img2"style="float: left;"src="../../images/tete.png" alt="flag">
+					<div class="experiment_main_menu_items_box">
+						<div class="experiment_main_menu_items_box_title">植物生物学</div>
+						<div class="experiment_main_menu_items_box_text2">生物化学，顾名思义是研究生物体中的化学进程的一门学科，常常被简称为生化。 它主要用于研究细胞内各组分，如蛋白质、糖类、脂类、核酸等生物大分子的结构和功能。 </div></div>
+				</div></li>
+		<li><div class="experiment_main_menu_items">
+					<img class="experiment_main_menu_items_img1"style="float: left;"src="../../images/tete.png" alt="flag">
+					<div class="experiment_main_menu_items_box1">
+						<div class="experiment_main_menu_items_box_title">动物生物学</div>
+						<div class="experiment_main_menu_items_box_text1">生物化学，顾名思义是研究生物体中的化学进程的一门学科，常常被简称为生化。 它主要用于研究细胞内各组分，如蛋白质、糖类、脂类、核酸等生物大分子的结构和功能。 </div></div>
+				</div></li>
+		<li><div class="experiment_main_menu_items">
+					<img class="experiment_main_menu_items_img2"style="float: left;"src="../../images/tete.png" alt="flag">
+					<div class="experiment_main_menu_items_box">
+						<div class="experiment_main_menu_items_box_title">细胞生物学</div>
+						<div class="experiment_main_menu_items_box_text2">生物化学，顾名思义是研究生物体中的化学进程的一门学科，常常被简称为生化。 它主要用于研究细胞内各组分，如蛋白质、糖类、脂类、核酸等生物大分子的结构和功能。 </div></div>
+				</div></li>
+		<li><div class="experiment_main_menu_items">
+					<img class="experiment_main_menu_items_img1"style="float: left;"src="../../images/tete.png" alt="flag">
+					<div class="experiment_main_menu_items_box1">
+						<div class="experiment_main_menu_items_box_title">微生物学</div>
+						<div class="experiment_main_menu_items_box_text1">生物化学，顾名思义是研究生物体中的化学进程的一门学科，常常被简称为生化。 它主要用于研究细胞内各组分，如蛋白质、糖类、脂类、核酸等生物大分子的结构和功能。 </div></div>
+				</div></li>
+
+
+
+	</ul>
 
 
 

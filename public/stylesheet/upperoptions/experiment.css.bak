@@ -68,7 +68,6 @@
 	vertical-align: middle;
 	/*水平居中*/
 	text-align: center;
-	border: 2px black solid;
 	padding: 5px;
 	font-size: 28px;
 	font-style: bold;

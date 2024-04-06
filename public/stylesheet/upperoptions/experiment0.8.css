@@ -29,6 +29,7 @@
     float: left;
 	margin: 10px;
 	width: 280px;
+	border: 2px red solid;
 	font-size: 18px;
 	letter-spacing: 3px;
 	font-family:"幼圆"; 
@@ -58,6 +59,7 @@
 	height: 313px
 	margin: 0px;
 	padding: 0px;
+	border: 2px red solid;
 }
 .experiment_main_menu_items_box_title{
 	position: relative;
