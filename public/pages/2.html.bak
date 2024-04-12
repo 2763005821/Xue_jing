@@ -3,27 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Div Fade Example</title>
-<style>
-  .fade-box {
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    transition: opacity 1s; /* 设置渐变效果 */
-    opacity: 0; /* 初始化透明度为0，即不可见 */
+<title>HTML Filter Example</title>
+<script>
+function filterFunction() {
+  // 获取输入的值
+  var input, filter, ul, li, a, i;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName('a');
+
+  // 循环通过每个列表项
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
   }
-  
-  .container:hover .fade-box {
-    opacity: 1; /* 鼠标经过时设置透明度为1，即可见 */
-  }
-</style>
+}
+
+</script>
+<script type="text/javascript" src="../javascripts/example.js"></script>
 </head>
 <body>
- 
-<div class="container">
-  鼠标经过我
-  <div class="fade-box"></div>
+
+<input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
+
+<div id="myDropdown" class="dropdown">
+  <a href="#">John Doe</a>
+  <a href="#">Jane Doe</a>
+  <a href="#">Mike Ross</a>
+  <a href="#">Jill Johnson</a>
 </div>
- 
+
 </body>
 </html>

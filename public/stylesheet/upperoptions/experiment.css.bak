@@ -23,6 +23,7 @@
 	top: 300px;
 	left: 155px;
 	width: 100%;
+
 }
 .experiment_main_menu2{
 	position: absolute;
@@ -47,6 +48,10 @@
 	height: 313px;
 	margin: 0px;
 	padding: 0px;
+	transition: transform 0.3s ease; /* 平滑变化 */
+}
+.experiment_main_menu_items_img1:hover{
+	transform: scale(1.05);
 }
 .experiment_main_menu_items_img2{
 	position: relative;
@@ -56,6 +61,10 @@
 	height: 313px;
 	margin: 0px;
 	padding: 0px;
+	transition: transform 0.3s ease; /* 平滑变化 */
+}
+.experiment_main_menu_items_img2:hover{
+	transform: scale(1.05);
 }
 .experiment_main_menu_items_box1{
 	position: relative;
@@ -107,7 +116,7 @@
 .end1{
 	z-index: 1;
 	position: absolute;
-	top: 1520px;
+	top: 2020px;
 	left: 0px;
 	width: 100%;
 	height: 100px;

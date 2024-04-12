@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -82,7 +82,7 @@
    <a href="./upperoptions/experiment.html">实验共享</a>
    <div class="clear"></div>
    <ul>
-       <li><a href="blog.html">生物化学</a></li>
+       <li><a href="./upperoptions/experiment/ciochemistry.html">生物化学</a></li>
        <li><a href="blog_detail.html">植物生物学</a></li>
        <li><a href="blog_detail2.html">动物生物学</a></li>
        <li><a href="blog_detail2.html">细胞生物学</a></li>
@@ -91,8 +91,8 @@
 	   <li><a href="blog_detail2.html">神经生物学</a></li>
 	   <li><a href="blog_detail2.html">演化与生态学</a></li>
 	   <li><a href="blog_detail2.html">现代生物技术学</a></li>
-	   <li><a href="blog_detail2.html">生物医学</a></li>
 	   <li><a href="blog_detail2.html">生物信息学</a></li>
+	   <li><a href="blog_detail2.html">生物医学</a></li>
    </ul>
 </li>
 <li>
@@ -208,7 +208,7 @@
                         <div class="mask"></div>
                     </div>
                     <div class="txt">
-                        <div class="category">出版物</div>
+                        <div class="category">张锦</div>
                         <div class="title">“元”年伊始，产业向“新”</div>
                         <div class="content">2021年ICT领域热点事件盘点</div>
                         <div class="read-more"><span>了解更多</span><span class="iconfont icon-xiangyoujiantou"></span></div>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="txt">
                         <div class="category">全球产业展望</div>
-                        <div class="title">华为发布《智能世界2030》报告</div>
+                        <div class="title">张英杰</div>
                         <div class="content">无界探索，翻开未来</div>
                         <div class="read-more"><span>了解更多</span><span class="iconfont icon-xiangyoujiantou"></span></div>
                     </div>
