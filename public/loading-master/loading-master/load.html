@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="height:100%">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="load.css"/>
+	</head>
+	<body style="height:100%">
+		<div class="wrapper">
+			<div class="content">
+				<p><span class="reject">注册</span><span class="load">登录</span></p>
+			    <div><span class="rejectLine"></span><span class="loadLine"></span></div>
+				<div class="rejecting">
+					<input type="text" class="one te" value="请输入用户名" ><span class="textStart">*</span><div class="im"></div><br>
+					<input type="text" class="one pa" value="请输入密码"><span class="passStart">*</span><div class="im2"></div><br>
+					<p class="buttonContent"><button class="buttonOne">确定</button></p>
+				</div>
+				<div class="loading">
+					<input type="text" class="two te" value="请输入用户名" ><div class="im"></div><br>
+					<input type="text" class="two pa" value="请输入密码"><div class="im2"></div><br>
+					<label for="remember" style="font-size:18px;" class="label1"><input type="checkbox" id="remember">记住密码</label>
+					<label for="remember1" style="font-size:18px;" class="label2"><input type="checkbox" id="remember1">自动登录</label>
+					<p class="buttonContent"><button class="buttonTwo">确定</button></p>
+				</div>
+			</div>
+		</div>
+		<div class="page2" style="opacity:0;width:100%;height:100%;position:absolute;top:0;left:0;">
+			<div>这是登录成功之后的界面</div>
+			<br>
+			<button type="button" class="buttonBack">退出登录</button>
+		</div>
+	</body>
+	<script src="load.js" type="text/javascript" charset="utf-8"></script>
+</html>

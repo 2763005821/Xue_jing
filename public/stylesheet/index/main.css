@@ -330,6 +330,8 @@ a {
     margin-right: 150px;
 	margin-top: 100px;
     overflow: hidden;/*容器外隐藏*/
+	box-shadow: 5px 5px 10px RGB(150,150,150);
+	border-radius: 20px;
 }
 .huawei li:last-child{
     margin-right: 0;
