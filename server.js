@@ -3,6 +3,10 @@ var fs=require('fs');						//内置的http模块提供了HTTP服务器和客户�
 var path=require('path');				//内置的path模块提供了与文件系统路径相关的功能
 var mime=require('mime');			//附加的mime模块有根据文件扩展名得出MIME类型的能力
 var cache={};								//cache是用来缓存文件内容的对象
+var parse=require('url').parse;
+var join=require('path').join;
+
+var root=__dirname;
 
 
 function send404(response){		//错误响应函数404
@@ -49,7 +53,7 @@ var server=http.createServer(function(request, response) {			//从http请求中�
 	if(request.url=='/') {
 		filePath='public/pages/index.html';
 	} else {
-		filePath='public' + request.url;
+		filePath='public' +request.url;
 	}
 	var absPath='./' + filePath;
 	serveStatic(response, cache, absPath);
