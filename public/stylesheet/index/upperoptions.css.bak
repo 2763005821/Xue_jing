@@ -45,7 +45,7 @@ form .search_main {
 	width: 100%;
 	height: 95px;
 	background-color: white;
-	box-shadow: 5px 5px 10px RGB(200,200,200), -5px -5px 10px RGB(150,150,150);
+
 	}
 	 
 .upload{
@@ -280,7 +280,7 @@ form .search_main {
 	  position:absolute;
 	  top:100px;
     transition: opacity 0.5s; /* 设置渐变效果 */
-	transition : 1s;
+	transition : 0.5s;
     opacity: 0; /* 初始化透明度为0，即不可见 */
 }
 .navigation > ul > li:hover ul{

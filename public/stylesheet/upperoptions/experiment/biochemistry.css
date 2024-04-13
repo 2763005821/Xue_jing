@@ -1,11 +1,26 @@
 .biochemistry_location{
 	position: absolute;
-	top: 13%;
+	top: 113%;
 	left: 5%;
 	font-family:"等线"; 
 	font-size: 20px;
 
 }
+.biochemistry_main_img{
+	position: absolute;
+	top: 10%;
+	left: 0%;
+}
+	.white_bar1{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 95px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(100,100,100), -5px -5px 10px RGB(0,0,0);
+	}
 .end1{
 	z-index: 1;
 	position: absolute;
@@ -15,4 +30,91 @@
 	height: 100px;
 	background-color: RGB(246,246,246);
 
+}
+/******************************************/
+.id{
+	position: absolute;
+	top: 44%;
+	left: 30%;
+	}
+ .biochemistry_search-form {
+    display: absolute;
+	top: 100px;
+	left: 100px;
+
+    }
+    .biochemistry_search-input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 700px;
+      transition: box-shadow 0.3s ease;
+    }
+    .biochemistry_search-input:focus {
+      outline: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .biochemistry_search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .biochemistry_search-button:hover {
+      background-color: #45a049;
+    }
+/*******************滚动图片栏**********************************/
+.container{
+
+    width: 800px;
+    /* 相对定位 */
+    position: absolute;
+	top: 16%;
+	left:30%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.biochemistry_picture{
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.biochemistry_picture_li{
+    list-style: none;
+    height: 100%;
+    padding-right: 20px;
+}
+.biochemistry_picture_li img{
+    width: 200px;
+    height: 150px;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+    /* 图片定位正中间 */
+    object-position: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn{
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin: 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.2);
 }

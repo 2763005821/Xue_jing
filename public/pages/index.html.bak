@@ -41,6 +41,7 @@
 				<img class="upload_1"src="../icons/favorite.png"></a></div>
 			<div class="myself"><a href=""title=""style="text-decoration: none; color: black">
 				<img class="upload_1"src="../icons/myself.png"></a></div>
+			
 			<!--导航栏选项/upperoptions.cxx-->
 			<div class="navigation">
 			 <ul>
@@ -142,7 +143,7 @@
 			</script>
 			
 	<!--		<div class="about_us"><a href=""title=""style="text-decoration: none; color: black">关于我们</div> -->
-		<!---->
+		<!--欢迎栏目-->
 		<div class="welcome"></div>
 		<div class="welcome_words">
 			<h3 class="welcome_title">欢迎使用学境
@@ -190,7 +191,6 @@
                 <a href=""> 
                     <div class="pic">
                         <img  src="../images/article_1.png"/>
-                        <div class="mask"></div>
                     </div>
                     <div class="txt">
                         <div class="category">前沿探索</div>

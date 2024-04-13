@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML Filter Example</title>
-<script>
-function filterFunction() {
-  // 获取输入的值
-  var input, filter, ul, li, a, i;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName('a');
+<html>
 
-  // 循环通过每个列表项
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>可切换方向的无缝衔接图片滚动效果</title>
+    <link rel="stylesheet" href="149.css">
+	<style>
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 居中显示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+}
+.container{
+    width: 800px;
+    /* 相对定位 */
+    position: relative;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+ul{
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+li{
+    list-style: none;
+    height: 100%;
+    padding-right: 20px;
+}
+li img{
+    width: 200px;
+    height: 150px;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+    /* 图片定位正中间 */
+    object-position: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.btn{
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin: 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.2);
 }
 
-</script>
-<script type="text/javascript" src="../javascripts/example.js"></script>
+	</style>
 </head>
+
 <body>
+    <div class="container">
+        <ul>
+            <li><img src="../images/article_1.png" alt=""></li>
+            <li><img src="../images/article_2.png" alt=""></li>
+            <li><img src="../images/article_3.png" alt=""></li>
+            <li><img src="../images/article_4.png" alt=""></li>
+        </ul>
+        <div class="btns">
+            <div class="btn">← 向左走</div>
+            <div class="btn">向右走 →</div>
+        </div>
+    </div>
 
-<input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search for names.." title="Type in a name">
-
-<div id="myDropdown" class="dropdown">
-  <a href="#">John Doe</a>
-  <a href="#">Jane Doe</a>
-  <a href="#">Mike Ross</a>
-  <a href="#">Jill Johnson</a>
-</div>
-
+    <script src="149.js"></script>
 </body>
+
 </html>

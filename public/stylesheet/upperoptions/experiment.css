@@ -48,6 +48,7 @@
 	margin: 0px;
 	padding: 0px;
 	transition: transform 0.3s ease; /* 平滑变化 */
+	border-radius: 20px;
 }
 .experiment_main_menu_items_img1:hover{
 	transform: scale(1.05);
@@ -61,6 +62,7 @@
 	margin: 0px;
 	padding: 0px;
 	transition: transform 0.3s ease; /* 平滑变化 */
+	border-radius: 20px;
 }
 .experiment_main_menu_items_img2:hover{
 	transform: scale(1.05);

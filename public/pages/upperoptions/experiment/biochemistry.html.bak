@@ -39,7 +39,7 @@
 			<a href="../../index.html"title=""style="text-decoration: none; color: black">
 			<img class="logo_1"style="float: left;"src="../../../icons/logo_main7.png" alt="flag"></a></div>
 		<!--白色导航栏/upperoptions.css-->
-		<div class="white_bar"></div>
+		<div class="white_bar1"></div>
 		<form class="search1"target="_blank" method="get" action="https://www.baidu.com/s">
 				<input type="text" placeholder="请输入关键词" name="word" class="text"/>
 				<input type="submit" value="搜索" class="search_main"></form>
@@ -99,7 +99,7 @@
    </ul>
 </li>
 <li>
-   <a href="./upperoptions/experiment.html">实验共享</a>
+   <a href="../experiment.html">实验共享</a>
    <div class="clear"></div>
    <ul>
        <li><a href="./biochemistry.html">生物化学</a></li>
@@ -134,11 +134,42 @@
 				</ul>
 			</div>
 		<!--主体-->
+		<div class="biochemistry_main_img">
+			<!--图片尺寸1903*-->
+			<img class="biochemistry_main_img1"src="../../../images/biochemistry3.png" alt="flag"></div>
+		<div class="id">
+		<div class="biochemistry_search-form">
+			  <form id="biochemistry_searchForm" action="/search" method="get">
+			 <input class="biochemistry_search-input" type="text" name="query" placeholder="请输入实验名称...">
+			<input class="biochemistry_search-button" type="submit" value="搜索">
+		 </form>
+		 </div>
+		 </div>
+
 		<div class="biochemistry_location">
 			<a href="../../index.html"title=""style="text-decoration: none; color: black">首页</a>>
 			<a href="../experiment.html"title=""style="text-decoration: none; color: black">实验共享</a>>
 			<a href="./biochemistry.html"title=""style="text-decoration: none; color: black">生物化学
 		</div>
+		 <div class="container">
+        <ul class="biochemistry_picture">
+            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt=""></li>
+		</ul>
+     <div class="btns">
+            <div class="btn"> ← </div>
+            <div class="btn"> → </div>
+     </div>
+	   <script src="149.js"></script>
+    </div>
+
+
 	
 
 
