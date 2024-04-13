@@ -138,8 +138,7 @@
 	<ul class="experiment_main_menu">
 		<li><div class="experiment_main_menu_items">
 					<a href="./experiment/biochemistry.html"title=""style="text-decoration: none; color: black">
-					<img class="experiment_main_menu_items_img1"style="float: left;"src="../../images/tete.png" alt="flag">
-					<div class="mask"></div></a>
+					<img class="experiment_main_menu_items_img1"style="float: left;"src="../../images/tete.png" alt="flag"></a>
 					<div class="experiment_main_menu_items_box1">
 						<div class="experiment_main_menu_items_box_title"><a href=""title=""style="text-decoration: none; color: black">
 							生物化学</a></div>

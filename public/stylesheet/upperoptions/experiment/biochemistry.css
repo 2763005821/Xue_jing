@@ -152,3 +152,50 @@
 	margin-bottom: 15px;
 	height: 80px;
 }
+/***************************************************/
+.biochemistry_daily_push{
+	position: absolute;
+	z-index: 3;
+	top: 75%;
+	left: 5%;
+	background-color: white;
+	border-radius: 5px;
+	width: 1100px;
+}
+.biochemistry_daily_push_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_daily_push_title{
+	padding-left: 8px;
+}
+.biochemistry_daily_push_blue_bar_img{
+	margin: 8px;
+	width: 40%;
+	height: 40%;
+}
+.biochemistry_daily_push_blue_bar_item{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	width: 580px;
+}
+.biochemistry_daily_push_blue_bar_item_name{
+	font-size: 20px;
+	font-weight: 700;
+}
+.biochemistry_daily_push_blue_bar_item_eng{
+	position: relative;
+	color: RGB(30,150,200);
+	font-weight: 500;
+	top: -25px;
+	left: 505px;
+	width: 70px;
+	text-align: center; 
+	vertical-align: middle;
+	font-size: 15px;
+	border: 1px solid RGB(30,150,200);
+	border-radius: 5px;
+}
