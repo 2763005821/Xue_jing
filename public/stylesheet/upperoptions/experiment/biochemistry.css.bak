@@ -1,6 +1,6 @@
 .biochemistry_location{
 	position: absolute;
-	top: 113%;
+	top: 80%;
 	left: 5%;
 	font-family:"等线"; 
 	font-size: 20px;
@@ -35,7 +35,7 @@
 .id{
 	position: absolute;
 	top: 44%;
-	left: 30%;
+	left: 25%;
 	}
  .biochemistry_search-form {
     display: absolute;
@@ -49,7 +49,7 @@
       border: none;
       border-radius: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      width: 700px;
+      width: 900px;
       transition: box-shadow 0.3s ease;
     }
     .biochemistry_search-input:focus {
@@ -73,11 +73,11 @@
 /*******************滚动图片栏**********************************/
 .container{
 
-    width: 800px;
+    width: 1000px;
     /* 相对定位 */
     position: absolute;
 	top: 16%;
-	left:30%;
+	left:25%;
     /* 溢出隐藏 */
     overflow: hidden;
 }
@@ -104,7 +104,7 @@
 .btns{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .btn{
     color: #fff;
@@ -117,4 +117,38 @@
 }
 .btn:hover{
     background-color: rgba(255,255,255,0.2);
+}
+/***************************************************/
+.biochemistry_greeting_bar{
+	position: absolute;
+	background-color: white;
+	z-index: 3;
+	top: 54%;
+	left: 25%;
+	width: 1010px;
+	border:1px solid RGB(210,210,210);
+	box-shadow: 5px 5px 10px RGB(100,100,100);
+	border-radius: 5px;
+
+}
+.biochemistry_greeting_bar1{
+	float: left;
+	width: 250px;
+	margin: 0px;
+	height: 80px;
+	text-align: center; 
+	vertical-align: middle;
+}
+.biochemistry_greeting_bar1_main{
+	/*字体框相对位置*/
+	margin-top: 25px;
+	font-size: 30px;
+	color: RGB(30,150,200);
+}
+.biochemistry_greeting_bar1_stick{
+	border:1px solid RGB(210,210,210);
+	float:left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 80px;
 }

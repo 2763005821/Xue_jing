@@ -77,7 +77,11 @@ li img{
             <li><img src="../images/article_2.png" alt=""></li>
             <li><img src="../images/article_3.png" alt=""></li>
             <li><img src="../images/article_4.png" alt=""></li>
-        </ul>
+            <li><img src="../images/article_1.png" alt=""></li>
+            <li><img src="../images/article_2.png" alt=""></li>
+            <li><img src="../images/article_3.png" alt=""></li>
+            <li><img src="../images/article_4.png" alt=""></li>
+		</ul>
         <div class="btns">
             <div class="btn">← 向左走</div>
             <div class="btn">向右走 →</div>
