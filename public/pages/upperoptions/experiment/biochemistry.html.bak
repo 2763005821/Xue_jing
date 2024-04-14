@@ -153,14 +153,46 @@
 		</div>
 		 <div class="container">
         <ul class="biochemistry_picture">
-            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt=""></li>
-            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt=""></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_1.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_2.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_3.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
+            <li class="biochemistry_picture_li"><img src="../../../images/article_4.png" alt="">
+				<div class="biochemistry_picture_li_box">
+					<div class="biochemistry_picture_li_box_title">
+						<a href=""title=""style="text-decoration: none; color: white">碱性磷酸酶的提取</div>
+					<div class="biochemistry_picture_li_box_text">碱性磷酸酶（ALP或AKP）是广泛分布于人体肝脏、骨骼、肠、肾和胎盘等组织经肝脏向胆外排出的一种酶。</a></div></div></li>
 		</ul>
      <div class="btns">
             <div class="btn"> ← </div>
@@ -283,18 +315,43 @@
 					<a href=""title=""style="text-decoration: none; color: black">
 					<div class="biochemistry_news_ul_li_items"><!--每个条目的悬停控制-->
 						<div class="biochemistry_news_ul_li_item1">碱性磷酸酶的提取asdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-						<div class="biochemistry_news_ul_li_time1">2023-05-22</div></div></a></li>
-					<hr class="biochemistry_news_ul_li_line"><!--条目分隔线-->
-				
-				
-			</ul>
-		</div>
-
-		<div class="biochemistry">
+						<div class="biochemistry_news_ul_li_time1">2023-05-22</div></div></a></li></ul></div>
+		
+		<div class="biochemistry_top_sharer">
 			<h2 style="margin-left: 20px;">
-				<i class=""></i>
-				<span class="">新闻</span></h2>
-			<ul  class="">
+				<i class="biochemistry_top_sharer_blue_bar"></i>
+				<span class="biochemistry_top_sharer_title">分享排行</span></h2>
+			<ul  class="biochemistry_top_sharer_ul">
+				<li class="biochemistry_top_sharer_ul_li">
+					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/空城旧梦.jpg" alt=""><!--每个条目图片-->
+						<div class="biochemistry_top_sharer_ul_li_item_name">空城旧梦</div>
+						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+				<li class="biochemistry_top_sharer_ul_li">
+					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/抹想紫苑.jpg" alt=""><!--每个条目图片-->
+						<div class="biochemistry_top_sharer_ul_li_item_name">抹想紫苑</div>
+						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+				<li class="biochemistry_top_sharer_ul_li">
+					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/时光在撒谎i.jpg" alt=""><!--每个条目图片-->
+						<div class="biochemistry_top_sharer_ul_li_item_name">时光在撒谎i</div>
+						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+				<li class="biochemistry_top_sharer_ul_li">
+					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/我不叫茶几.jpg" alt=""><!--每个条目图片-->
+						<div class="biochemistry_top_sharer_ul_li_item_name">我不叫茶几</div>
+						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+					
+					
 			</ul>
 		</div>
 

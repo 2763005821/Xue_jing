@@ -102,6 +102,11 @@
 	padding: 5px;
 	font-size: 28px;
 	font-style: bold;
+	border-radius: 5px;
+	transition: transform 0.3s ease; /* 平滑变化 */
+}
+.experiment_main_menu_items_box_title:hover{
+	transform: scale(1.05);
 }
 .experiment_main_menu_items_box_text1{
 	position: absolute;

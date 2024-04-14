@@ -110,6 +110,33 @@
     /* 图片定位正中间 */
     object-position: center;
 }
+.biochemistry_picture_li_box{
+	position: relative;
+	top: -55px;
+	left: 0px;
+	z-index: 9;
+	background: rgba(0,0,0,.6); 
+	width: 200px;
+	height: 55px;
+}
+.biochemistry_picture_li_box_title{
+	position: relative;
+	top: 5px;
+	left: 5px;
+	font-size: 15px;
+	color: white;
+}
+.biochemistry_picture_li_box_text{
+	position: relative;
+	top: 10px;
+	left: 5px;
+	font-size: 10px;
+	width: 190px;
+	color: white;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
 .btns{
     display: flex;
     justify-content: center;
@@ -289,4 +316,68 @@
 	margin-left: 50px;
 	float: left;
 }
-/*************************************************/
+/********************分享排行榜*****************************/
+.biochemistry_top_sharer{
+	position: absolute;
+	z-index: 3;
+	top: 112%;
+	left: 65%;
+	background-color: white;
+	border-radius: 5px;
+	width: 400px;
+}
+.biochemistry_top_sharer_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_top_sharer_title{
+	padding-left: 8px;
+}
+.biochemistry_top_sharer_ul{
+	margin-top:-10px;
+	margin-left: 13px;
+    height: 250px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_top_sharer_ul_li_line{
+	position: relative;
+	margin: 8px;
+	left: -32px;
+	width: 350px;
+	color: RGB(256,256,256);
+}
+.biochemistry_top_sharer_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_top_sharer_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_top_sharer_ul_li_items_img{
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+.biochemistry_top_sharer_ul_li_item_name{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 150px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
+.biochemistry_top_sharer_ul_li_items_t{
+	color: RGB(120,120,120);
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+	width: 140px;
+	text-align: right; 
+	vertical-align: middle;
+}
