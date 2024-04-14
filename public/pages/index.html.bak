@@ -282,7 +282,7 @@
     </div>
 		<!--图片大小450px*253px，可直接在下面更改-->
 		
-		<div class="padding_line"style="position: absolute;top: 2000px;"><hr style="color: balck"></div>
+		<div class="padding_line"style="position: absolute;top: 1950px;"><hr style="color: balck"></div>
 
 		<div class="web_essentials">
 			<div class="web_essentials_background"></div>
@@ -290,7 +290,8 @@
 			<div class="web_essentials_title">principle of  neural science</div>
 			<div class="web_essentials_title_1">特定的脑区并不负责特定的心智功能，而是基本的处理单元。</div>
 			<div class="web_essentials_text">Perception, movements, language, thought and memory are all made possible by the interlink of serial and parallel processing in the discrete brain regions, each with specific functions.</div>
-			<div class="web_essentials_p">了解更多+</div></div>
+			
+				<a class="web_essentials_p_a"href=""title=""><div class="web_essentials_p">了解更多+</div></a></div>
 
 		<div class="end_plus">
 			<div class="end_plus_title">
@@ -300,7 +301,7 @@
 			</div>
 				<div class="end_plus_box_clear"></div>
 				<div class="end_plus_box1">
-				<div class="end_plus_box_text">整合物种多样性数据，开发基于大数据与人工智能技术的数据挖掘与知识发现模型工具，建设物种多样性综合服务信息平台，为科学研究、政府决策与科学普及提供支持。</div>
+				<div class="end_plus_box_text">整合生物学数知识，开发基于大数据与人工智能技术的知识挖掘与学习工具，建设物种综合服务信息平台，为教学培养、科学研究、科学普提供支持。</div>
 			</div>
 			<div class="end_plus_box_stick"></div>
 
@@ -315,8 +316,6 @@
 				</ul>
 			</div>
 			<div class="end_plus_box_stick"></div>
-
-
 			<div class="end_plus_box3">
 				<ul class="end_plus_box3_ul">
 					<li class="end_plus_box3_ul_location">

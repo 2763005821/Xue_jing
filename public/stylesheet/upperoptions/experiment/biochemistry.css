@@ -182,10 +182,12 @@
 }
 .biochemistry_daily_push_ul{
 	margin-top: -10px;
-    height: 500px; /* 设置列表的高度 */
+    height: 600px; /* 设置列表的高度 */
     overflow-y: auto; /* 添加垂直滚动条 */
 }
 .biochemistry_daily_push_ul_li_line{
+	position: relative;
+	left: -15px;
 	color: RGB(256,256,256);
 }
 .biochemistry_daily_push_blue_bar_items{
@@ -214,11 +216,7 @@
 	font-weight: 700;
 }
 /*这是每周推荐的超链接悬停效果控制（注意伪类顺序！）*/
-.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:link{
-	color: black;
-}
 .all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:visited{
-	
 	color: black;
 }
 .all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:hover{
@@ -237,3 +235,58 @@
 	border: 1px solid RGB(30,150,200);
 	border-radius: 5px;
 }
+/**********************************************************/
+.biochemistry_news{
+	position: absolute;
+	z-index: 3;
+	top: 75%;
+	left: 65%;
+	background-color: white;
+	border-radius: 5px;
+	width: 400px;
+}
+.biochemistry_news_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_news_title{
+	padding-left: 8px;
+}
+.biochemistry_news_ul{
+	margin-top: -10px;
+    height: 250px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_news_ul_li_line{
+	position: relative;
+	margin: 8px;
+	left: -20px;
+	width: 350px;
+	color: RGB(256,256,256);
+}
+.biochemistry_news_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_news_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_news_ul_li_item1{
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
+.biochemistry_news_ul_li_time1{
+	color: RGB(120,120,120);
+	margin-left: 50px;
+	float: left;
+}
+/*************************************************/
