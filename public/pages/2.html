@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Div Border Half</title>
 <style>
-  .div-border-half {
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: #fff;
-    overflow: hidden;
-  }
+/* 设置超链接的默认样式 */
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
  
-  .div-border-half:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    border: 1px solid black;
-    border-bottom: none;
-  }
+/* 设置超链接被访问后的样式 */
+a:visited {
+    color: purple;
+    text-decoration: none; /* 取消下划线 */
+}
+ 
+/* 设置鼠标悬停在超链接上时的样式 */
+a:hover {
+    color: red;
+    text-decoration: underline; /* 添加下划线 */
+}
+ 
+/* 设置超链接被点击的样式 */
+a:active {
+    color: yellow;
+}
 </style>
 </head>
 <body>
  
-<div class="div-border-half"></div>
+<body>
+<a class="123"href="https://www.example.com">链接文本</a>
+</body>
  
 </body>
 </html>

@@ -21,15 +21,24 @@
 	background-color: white;
 	box-shadow: 5px 5px 10px RGB(100,100,100), -5px -5px 10px RGB(0,0,0);
 	}
+.biochemistry_end_plus{
+	z-index: 1;
+	position: absolute;
+	top: 1679px;
+	left: 0px;
+	width: 100%;
+	height: 240px;
+	background-color: RGB(236,236,236);
+	border-bottom: 1px solid black;
+}
 .end1{
 	z-index: 1;
 	position: absolute;
-	top: 3020px;
+	top: 241px;
 	left: 0px;
 	width: 100%;
 	height: 100px;
-	background-color: RGB(246,246,246);
-
+	background-color: RGB(236,236,236);
 }
 /******************************************/
 .id{
@@ -127,7 +136,7 @@
 	left: 25%;
 	width: 1010px;
 	border:1px solid RGB(210,210,210);
-	box-shadow: 5px 5px 10px RGB(100,100,100);
+	box-shadow: 5px 5px 10px RGB(190,190,190);
 	border-radius: 5px;
 
 }
@@ -171,6 +180,24 @@
 .biochemistry_daily_push_title{
 	padding-left: 8px;
 }
+.biochemistry_daily_push_ul{
+	margin-top: -10px;
+    height: 500px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_daily_push_ul_li_line{
+	color: RGB(256,256,256);
+}
+.biochemistry_daily_push_blue_bar_items{
+	margin: 0px;
+	padding: 0px;
+}
+.biochemistry_daily_push_blue_bar_items:hover{
+	background-color: RGB(236,236,236);
+}
+.biochemistry_daily_push_ul:hover{
+
+}
 .biochemistry_daily_push_blue_bar_img{
 	margin: 8px;
 	width: 40%;
@@ -185,6 +212,17 @@
 .biochemistry_daily_push_blue_bar_item_name{
 	font-size: 20px;
 	font-weight: 700;
+}
+/*这是每周推荐的超链接悬停效果控制（注意伪类顺序！）*/
+.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:link{
+	color: black;
+}
+.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:visited{
+	
+	color: black;
+}
+.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:hover{
+	color: #14b9ce;
 }
 .biochemistry_daily_push_blue_bar_item_eng{
 	position: relative;

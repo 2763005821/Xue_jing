@@ -268,11 +268,11 @@
 .end{
 	z-index: 1;
 	position: absolute;
-	top: 3020px;
+	top: 3420px;
 	left: 0px;
 	width: 100%;
 	height: 100px;
-	background-color: RGB(246,246,246);
+	background-color: RGB(236,236,236);
 }
 .end_text{
 	position: relative;
@@ -299,6 +299,119 @@
 }
 .end_back_to_top:hover{
 	opacity: 0.75;
+}
+.end_plus{
+	z-index: 1;
+	position: absolute;
+	top: 3179px;
+	left: 0px;
+	width: 100%;
+	height: 240px;
+	background-color: RGB(236,236,236);
+	border-bottom: 1px solid black;
+
+}
+.end_plus_title{
+	width: 1600px;
+}
+.end_plus_title1{
+	margin-top: 50px;
+	margin-left: 310px;
+	float: left;
+	width: 300px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.end_plus_title2{
+	margin-top: 50px;
+	margin-left: 80px;
+	float: left;
+	width: 600px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.end_plus_title3{
+	margin-top: 50px;
+	margin-left: 35px;
+	float: left;
+	width: 200px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.end_plus_box_clear{
+	clear: both;
+}
+.end_plus_box1{
+	float: left;
+	margin-top: 0px;
+	width: 300px;
+	margin-left: 300px;
+	margin-right: 20px;
+	height: 80px;
+	text-align: center; 
+	vertical-align: middle;
+}
+.end_plus_box2{
+	float: left;
+	margin-top: 0px;
+	width: 600px;
+	height: 80px;
+	text-align: center; 
+	vertical-align: middle;
+}
+.end_plus_box3{
+	float: left;
+	margin-top: 20px;
+	margin-left: -70px;
+	width: 300px;
+	height: 80px;
+	text-align: center; 
+	vertical-align: middle;
+}
+.end_plus_box2_ul_li{
+	width: 170px;
+	float: left;
+	margin: 5px;
+	margin-top: 10px;
+	list-style-type: disc;
+	text-align: left; 
+	vertical-align: middle;
+}
+.end_plus_box_text{
+	margin-top: 25px;
+	font-size: 17px;
+	color: black;
+	text-align: left; 
+}
+.end_plus_box_stick{
+	border:1px solid RGB(210,210,210);
+	margin-left: 15px;
+	margin-right: 15px;
+	float:left;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	height: 110px;
+}
+.end_plus_box3_ul{
+	position: relative;
+	left: -50px;
+}
+.end_plus_box3_ul_location{
+	margin-top: -10px;
+}
+.end_plus_box3_ul_phone{
+	margin-top: -10px;
+}
+.end_plus_box3_ul_email{
+	margin-top: -10px;
+}
+.end_plus_box3_ul_location_text{
+	position: relative;
+	top: -30px;
+	left: 150px;
+	width: 400px;
+	text-align: left; 
+	vertical-align: middle;
 }
 /*************************************************************重置top_articles******************************/
 

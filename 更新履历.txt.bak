@@ -1,0 +1,21 @@
+20240414
+新增尾条，类名为：end_plus。
+原始版本位于index.html，main.css
+使用时可以复制粘贴至其他html中，end_plus_css样式自行更改名称并调整位置
+需要预先引入main.css（主体样式）
+例子：“加入到biochemistry.index中”:
+
+	新类名：biochemistry_end_plus
+	
+	<link rel="stylesheet"href="../../../stylesheet/index/main.css">								<!--内容-->
+
+	.biochemistry_end_plus{
+	z-index: 1;
+	position: absolute;
+	top: 1679px;
+	left: 0px;
+	width: 100%;
+	height: 240px;
+	background-color: RGB(236,236,236);
+	border-bottom: 1px solid black;
+}
