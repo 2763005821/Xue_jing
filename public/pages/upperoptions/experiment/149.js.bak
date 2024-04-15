@@ -5,7 +5,7 @@ ul.innerHTML=ul.innerHTML+ul.innerHTML;
 let lis=document.querySelectorAll('.biochemistry_picture_li');
 let btns=document.querySelectorAll('.btn');
 // 每次滚动的跨度（正数向右，负数向左，默认向左滚动）
-let spa=-1;
+let spa=-0.4;
 // 计算并设置ul的总宽度
 ul.style.width=lis[0].offsetWidth*lis.length+'px';
 

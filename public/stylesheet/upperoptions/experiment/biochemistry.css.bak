@@ -154,7 +154,7 @@
 .btn:hover{
     background-color: rgba(255,255,255,0.2);
 }
-/***************************************************/
+/*****************欢迎栏**********************************/
 .biochemistry_greeting_bar{
 	position: absolute;
 	background-color: white;
@@ -188,7 +188,7 @@
 	margin-bottom: 15px;
 	height: 80px;
 }
-/***************************************************/
+/**********************每周推荐*****************************/
 .biochemistry_daily_push{
 	position: absolute;
 	z-index: 3;
@@ -377,7 +377,67 @@
 	margin-left: 5px;
 	margin-top: 5px;
 	float: left;
-	width: 120px;
+	width: 140px;
 	text-align: right; 
 	vertical-align: middle;
+}
+/********************更多功能*****************************/
+.biochemistry_more_function{
+	position: absolute;
+	z-index: 3;
+	top: 149%;
+	left: 5%;
+	background-color: white;
+	border-radius: 5px;
+	width: 1545px;
+}
+.biochemistry_more_function_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_more_function_title{
+	padding-left: 8px;
+}
+.biochemistry_more_function_blue_bar_ul{
+	margin-top:-10px;
+	margin-left: 13px;
+    height: 150px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_more_function_blue_bar_ul_li{
+	float: left;
+	width: 80px;
+	margin-right: 50px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items_a:hover{
+	color: #14b9ce;
+}
+.biochemistry_more_function_blue_bar_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_more_function_blue_bar_ul_li_items_img{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 40px;
+	height: 40px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items_name{
+	float: left;
+	margin-left: -1px;
+	margin-top: 5px;
+	width: 80px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+	text-align: center;
 }

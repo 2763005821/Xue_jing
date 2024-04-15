@@ -335,25 +335,36 @@
 					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
 						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/抹想紫苑.jpg" alt=""><!--每个条目图片-->
 						<div class="biochemistry_top_sharer_ul_li_item_name">抹想紫苑</div>
-						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+						<div class="biochemistry_top_sharer_ul_li_items_t">2</div></div></a></li>
 				<li class="biochemistry_top_sharer_ul_li">
 					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
 					<a href=""title=""style="text-decoration: none; color: black">
 					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
 						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/时光在撒谎i.jpg" alt=""><!--每个条目图片-->
 						<div class="biochemistry_top_sharer_ul_li_item_name">时光在撒谎i</div>
-						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
+						<div class="biochemistry_top_sharer_ul_li_items_t">3</div></div></a></li>
 				<li class="biochemistry_top_sharer_ul_li">
 					<hr class="biochemistry_top_sharer_ul_li_line"><!--条目分隔线-->
 					<a href=""title=""style="text-decoration: none; color: black">
 					<div class="biochemistry_top_sharer_ul_li_items"><!--每个条目的悬停控制-->
 						<img class="biochemistry_top_sharer_ul_li_items_img"src="../../../images/我不叫茶几.jpg" alt=""><!--每个条目图片-->
 						<div class="biochemistry_top_sharer_ul_li_item_name">我不叫茶几</div>
-						<div class="biochemistry_top_sharer_ul_li_items_t">1</div></div></a></li>
-					
-					
+						<div class="biochemistry_top_sharer_ul_li_items_t">4</div></div></a></li>
 			</ul>
 		</div>
+		<!--专栏、付费咨询、生化百科、Live、实验基础、相关教材、圆桌-->
+		<div class="biochemistry_more_function">
+			<h2 style="margin-left: 20px;">
+				<i class="biochemistry_more_function_blue_bar"></i>
+				<span class="biochemistry_more_function_title">更多功能</span></h2>
+			<ul  class="biochemistry_more_function_blue_bar_ul">
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/ufo宇宙飞船.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">专栏</div></div></a></li>
+				
+			</div>
 
 
 	
@@ -369,7 +380,7 @@
 			</div>
 				<div class="end_plus_box_clear"></div>
 				<div class="end_plus_box1">
-				<div class="end_plus_box_text">整合生物学数知识，开发基于大数据与人工智能技术的知识挖掘与学习工具，建设物种综合服务信息平台，为教学培养、科学研究、科学普提供支持。</div>
+				<div class="end_plus_box_text">整合生物学知识，开发基于大数据与人工智能技术的知识挖掘与学习工具，建设物种综合服务信息平台，为教学培养、科学研究、科学普及提供支持。</div>
 			</div>
 			<div class="end_plus_box_stick"></div>
 
