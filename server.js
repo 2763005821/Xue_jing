@@ -54,6 +54,7 @@ var server=http.createServer(function(request, response) {			//从http请求中�
 		filePath='public/pages/index.html';
 	} else {
 		filePath='public' +request.url;
+		console.log(filePath);
 	}
 	var absPath='./' + filePath;
 	serveStatic(response, cache, absPath);

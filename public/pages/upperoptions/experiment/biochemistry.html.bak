@@ -141,7 +141,7 @@
 		<div class="biochemistry_search-form">
 			  <form id="biochemistry_searchForm" action="/search" method="get">
 			 <input class="biochemistry_search-input" type="text" name="query" placeholder="请输入实验名称...">
-			<input class="biochemistry_search-button" type="submit" value="搜索">
+			<input class="biochemistry_search-button" type="submit" value="搜索"action="./search_results.html">
 		 </form>
 		 </div>
 		 </div>
@@ -363,7 +363,36 @@
 					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
 						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/ufo宇宙飞船.png" alt=""><!--每个条目图片-->
 						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">专栏</div></div></a></li>
-				
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/饮料.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">付费咨询</div></div></a></li>
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/帆船旅行.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">生化百科</div></div></a></li>
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/演讲台.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">Live</div></div></a></li>
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/钥匙.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">实验基础</div></div></a></li>
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/书.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">相关教材</div></div></a></li>
+				<li class="biochemistry_more_function_blue_bar_ul_li">
+					<a href=""title=""style="text-decoration: none; color: black">
+					<div class="biochemistry_more_function_blue_bar_ul_li_items"><!--每个条目的悬停控制-->
+						<img class="biochemistry_more_function_blue_bar_ul_li_items_img"src="../../../icons/桌子.png" alt=""><!--每个条目图片-->
+						<div class="biochemistry_more_function_blue_bar_ul_li_items_name">圆桌</div></div></a></li>
 			</div>
 
 
