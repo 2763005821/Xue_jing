@@ -1,2 +1,0 @@
-# loading
-这是一个前端使用javascript,html，后端使用NodeJs搭建的登录注册界面，该界面可以使用cookie实现记住密码和自动登录功能。

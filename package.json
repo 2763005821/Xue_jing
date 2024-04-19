@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"description": "Biology server",
 	"dependencies": {
-		"socket.io": "~0.9.6",
-		"mime": "~1.2.7"
+		"mime": "~1.2.7",
+		"mysql": "^2.18.1",
+		"socket.io": "~0.9.6"
 	}
 }

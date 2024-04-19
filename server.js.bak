@@ -5,6 +5,9 @@ var mime=require('mime');			//附加的mime模块有根据文件扩展名得出M
 var cache={};								//cache是用来缓存文件内容的对象
 var parse=require('url').parse;
 var join=require('path').join;
+/*******************数据库********************************/
+const mysql = require('mysql');
+ 
 
 var root=__dirname;
 
@@ -47,15 +50,36 @@ function serveStatic (response, cache, absPath) {					//静态文件服务器，
 
 /*第一&设置HTTP服务器逻辑*/
 /*接收请求储存于回调函数request中，返回response*/
-var server=http.createServer(function(request, response) {			//从http请求中分解动作与url
+var server=http.createServer(function(request, response) {		
+	// 设置数据库连接参数
+const connection = mysql.createConnection({
+  host     : '172.0.0.1', // 数据库服务器地址
+  user     : 'root', // 数据库用户名
+  password : '2314499817', // 数据库密码
+  database : 'world' // 要连接的数据库名
+});
+ 
+// 开启数据库连接
+connection.connect(function {
+  console.log('Successfully connected to the database.');
+  return ;
+});
+ 
+// 当你完成数据库操作后，可以关闭连接
+connection.end();
+
+
+
+	//从http请求中分解动作与url
 	var filePath=false;
 	
 	if(request.url=='/') {
-		filePath='public/pages/index.html';
+		filePath='public/index.html';
 	} else {
-		filePath='public/pages/index.html';
+		filePath='public' +request.url;
+		console.log(filePath);
 	}
-	var absPath='./' + filePath;
+	var absPath='./'+filePath;
 	serveStatic(response, cache, absPath);
 });
 
