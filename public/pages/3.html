@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>			<!--引入Vue.js-->
+<style>
+.title {
+  color: red;
+}
+</style>
+<script setup>
+import { ref } from 'vue'
+
+const awesome = ref(true)
+function toggle() {
+  awesome.value = !awesome.value
+}
+</script>
+</head>
+
+<body>
+
+<button @click="awesome = !awesome">Toggle</button>
+
+<h1 v-if="awesome">Vue is awesome!</h1>
+<h1 v-else>Oh no 😢</h1>
+</body>
+
+
+
+ 
+</body>
+</html>

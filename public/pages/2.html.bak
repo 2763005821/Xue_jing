@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <style>
-  a:link {color: blue;}
-  a:visited {color: blue;}
-  a:hover {color: red;}
-  a:active {color: green;}
 </style>
 </head>
 <body>
  
 <body>
-<a class="123"href="https://www.example.com">链接文本</a>
-</body>
+<div class="box">
+<div Class="login">Q4豆求</div>
+<div> <input type="text" class="count" placeholder= "请输入账号"></div>
+<div> <input class="pwd" type="password" placeholder="请输入密码"></div> 
+<div><button class="submit"onclick="submit()" type="submit"> 提交</button></div>
+</div>
+<script>
+	function ajax(count,pwd){
+		let ht = new XMLHttpRequest( ) 
+		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}`)
+		ht.send()
+		ht.onreadystatechange = function( ){			
+			if(ht.readyState == 4 && ht.status == 200){
+			try{
+				console.log(JSON.parse(ht.responseText));
+				ID=JSON.parse(ht.responseText);
+				console.log(ID.status);
+				if (ID.status=1)
+				{
+					window.location.href = 'http://example.com';  
+				}
+			}catch(error){
+				console.log("无法转换")
+			}
+			
+
+
+			}
+		}
+}
+var submit=function(){
+	let count_pwd = document.querySelectorAll("input")
+	ajax(count_pwd[0].value,count_pwd[1].value)
+}
+</script>
  
 </body>
 </html>

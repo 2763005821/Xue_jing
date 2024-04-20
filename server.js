@@ -51,24 +51,23 @@ function serveStatic (response, cache, absPath) {					//静态文件服务器，
 /*第一&设置HTTP服务器逻辑*/
 /*接收请求储存于回调函数request中，返回response*/
 var server=http.createServer(function(request, response) {		
+	response.setHeader( "Access-Control-Allow-origin","*")
+//	console.log(url.parse(request.url, true).query);
+
 	// 设置数据库连接参数
-const connection = mysql.createConnection({
+/*const connection = mysql.createConnection({
   host     : '172.0.0.1', // 数据库服务器地址
   user     : 'root', // 数据库用户名
   password : '2314499817', // 数据库密码
   database : 'world' // 要连接的数据库名
 });
- 
 // 开启数据库连接
 connection.connect(function() {
   console.log('Successfully connected to the database.');
   return ;
 });
-const sql1 = "select * from talbe_name"
- 
 // 当你完成数据库操作后，可以关闭连接
-connection.end();
-
+connection.end();*/
 
 
 	//从http请求中分解动作与url

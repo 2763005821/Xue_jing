@@ -8,6 +8,13 @@
 	<link rel="stylesheet"href="./stylesheet/background.css">					<!--背景切换-->
 	<link rel="stylesheet"href="./stylesheet/upperoptions.css">					<!--上横幅及上选项-->
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>			<!--引入Vue.js-->
+    <script>
+        // 这里放置立即执行的JavaScript代码
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('页面已加载完成！');
+        });
+    </script>
 	<style>
 	html{
 		width: 100%;
@@ -39,9 +46,23 @@
 				<img class="upload_1"src="./icons/share.png"></a></div>
 			<div class="favorite"><a href=""title=""style="text-decoration: none; color: black">
 				<img class="upload_1"src="./icons/favorite.png"></a></div>
-			<div class="myself"><a href="users.html"title=""style="text-decoration: none; color: black">
-				<img class="upload_1"src="./icons/myself.png"></a></div>
-			
+			<div class="navigation1">
+				<ul>
+					<li>
+						<a href="users.html"><img class="upload_1"src="./icons/myself.png"></a>
+						<div class="clear"></div>
+						<ul class="123">
+							<li><a href="styles.html">个人中心</a></li>
+							<li><a href="tables.html">投稿管理</a></li>
+						   <li><a href="typography.html">动态</a></li>
+						   <li><a href="flexible_columns.html">历史</a></li>
+						   <li><a href="services.html">创作中心</a></li>
+						   <li><a href="404.html">退出登录</a></li>
+					   </ul>
+					</li>
+					</ul>
+					</div></div>
+				
 			<!--导航栏选项/upperoptions.cxx-->
 			<div class="navigation">
 			 <ul>
