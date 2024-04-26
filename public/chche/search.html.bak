@@ -1,0 +1,7 @@
+<input type="text" id="search" onkeyup="filterList()" placeholder="Search for names...">
+<ul id="names">
+  <li>John Doe</li>
+  <li>Jane Doe</li>
+  <li>Emily Johnson</li>
+  <li>Alex Smith</li>
+</ul>

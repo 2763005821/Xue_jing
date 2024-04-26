@@ -94,6 +94,7 @@ form .search_main {
 }
 .navigation1 li
 {
+
   display:inline;
   margin-left:10px;
   position:relative;

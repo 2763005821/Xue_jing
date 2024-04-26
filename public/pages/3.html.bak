@@ -8,7 +8,10 @@
   color: red;
 }
 </style>
-<script>
+<script setup>
+import { ref } from 'vue'
+
+const awesome = ref(true)
 function toggle() {
   awesome.value = !awesome.value
 }

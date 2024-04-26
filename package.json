@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"description": "Biology server",
 	"dependencies": {
+		"express": "^4.19.2",
 		"jsdom": "^24.0.0",
 		"mime": "~1.2.7",
 		"mysql": "^2.18.1",

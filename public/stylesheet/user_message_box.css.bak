@@ -1,0 +1,43 @@
+ /* 暗色背景 */
+	        .window_bg{
+	        /* 默认隐藏 */
+		    display: none;
+				/* 固定定位 */
+				position: fixed;
+				/* 设置层级 */
+				z-index: 1;
+				/* 背景铺满全屏 */
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+			.window_content {
+			    background-color: #fefefe;
+			    margin: 15% auto; 
+			    padding: 10px;
+			    border: 1px solid #888;
+			    width: 30%; 
+			border-radius: 10px;
+			}
+			#window_text {
+				padding: 10px;
+				height: 30px;
+			}
+			
+			.btnBox {
+				width: 100%;
+				margin: 5px;
+				height: 8%;
+				border-top: 1px solid;
+				display: flex;
+			}
+			
+			.btnBox>div {
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}

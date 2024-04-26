@@ -1,0 +1,27 @@
+<input type="text" id="search" onkeyup="filterList()" placeholder="Search for names...">
+<ul id="names">
+  <li>John Doe</li>
+  <li>Jane Doe</li>
+  <li>Emily Johnson</li>
+  <li>Alex Smith</li>
+</ul>
+
+<script>
+function filterList() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('search');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("names");
+  li = ul.getElementsByTagName('li');
+ 
+  for (i = 0; i < li.length; i++) {
+    a = li[i].textContent || li[i].innerText;
+    txtValue = a.toUpperCase();
+    if (txtValue.indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>

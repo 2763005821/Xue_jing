@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Page</title>
+</head>
+<body>
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button type="submit">Search</button>
+  </form>
+  <div id="search-results"></div>
+ 
+  <script>
+// 创建一个新的无序列表
+var ul = document.createElement('ul');
+ 
+// 创建列表项并添加到列表中
+var li1 = document.createElement('li');
+li1.textContent = '列表项1';
+ul.appendChild(li1);
+ 
+var li2 = document.createElement('li');
+li2.textContent = '列表项2';
+ul.appendChild(li2);
+ 
+var li3 = document.createElement('li');
+li3.textContent = '列表项3';
+ul.appendChild(li3);
+ 
+// 将ul添加到DOM中的某个位置，例如body
+document.body.appendChild(ul);
+
+
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const searchInput = document.getElementById('search-input').value;
+      fetch('/search?q=' + encodeURIComponent(searchInput))
+        .then(response => response.json())
+        .then(data => {
+          // 假设返回的数据是一个对象数组，每个对象都有 'title' 和 'description' 属性
+          let resultsHTML = '';
+          data.forEach(result => {
+            resultsHTML += `<h3>${result.title}</h3><p>${result.description}</p>`;
+          });
+          document.getElementById('search-results').innerHTML = resultsHTML;
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>

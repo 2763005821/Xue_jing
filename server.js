@@ -71,13 +71,28 @@ connection.end();*/
 
 
 	//从http请求中分解动作与url
+	/*根据"?"分解url*/
 	var filePath=false;
-	
+	  var index = request.url.indexOf("?");
+	if (index !== -1) {
+		var real_url=request.url.substring(0, index);
+	}
+	else if(index==-1){
+		var real_url=request.url;
+	}
+
+	console.log("\n"+"request.url: "+request.url)
+	console.log("real_url: "+real_url);
+
+	name=request.url;
+    name=name.slice(name.indexOf("?")+1)
+    console.log("分解的查询: "+name);
+
 	if(request.url=='/') {
 		filePath='public/index.html';
 	} else {
-		filePath='public' +request.url;
-		console.log(filePath);
+		filePath='public' +real_url;
+		console.log("filepath: "+filePath);
 	}
 	var absPath='./'+filePath;
 	serveStatic(response, cache, absPath);

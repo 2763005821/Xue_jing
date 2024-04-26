@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+	<h1 style="text-align: center;">02.html</h1>
+    <button>点击我，弹出接收信息</button>
+</body>
+<script>
+    var name = location.search;
+    // var name = decodeURI(document.URL)//获取到编码的数据并进行解码，推荐
+    //获取到的数据其实是  ?uname=zhangsan'
+    //下面是对数据进行处理
+    name=name.slice(name.indexOf("=")+1)
+    console.log(name);
+    var button = document.querySelector("button");
+    button.onclick = function () {
+        alert(name)
+    }
+</script>
+
+</html>

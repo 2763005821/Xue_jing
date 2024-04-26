@@ -138,16 +138,24 @@
 			<img class="biochemistry_main_img1"src="./images/biochemistry3.png" alt="flag"></div>
 		<div class="id">
 		<div class="biochemistry_search-form">
-			  <form id="biochemistry_searchForm" action="/search" method="get">
+			  <form id="biochemistry_searchForm" action="search.html" method="search()">
 			 <input class="biochemistry_search-input" type="text" name="query" placeholder="请输入实验名称...">
 			<input class="biochemistry_search-button" type="submit" value="搜索">
 		 </form>
 		 </div>
 		 </div>
+<script>
+	var search=function(){
+		window.location.href = 'http://localhost:3000/index.html?' + 'uname=' + 'FYC';
+	}
+var submit=function(){
+		window.location.href = 'http://localhost:3000/index.html';
+}
+</script>
 
 		<div class="biochemistry_location">
-			<a href="index.html"title=""style="text-decoration: none; color: black">首页</a>>
-			<a href="../experiment.html"title=""style="text-decoration: none; color: black">实验共享</a>>
+			<a href="index.html"title=""style="text-decoration: none; color: black">首页</a> >
+			<a href="../experiment.html"title=""style="text-decoration: none; color: black">实验共享</a> >
 			<a href="./biochemistry.html"title=""style="text-decoration: none; color: black">生物化学</a>
 		</div>
 		 <div class="container">

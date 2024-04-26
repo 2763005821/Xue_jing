@@ -19,3 +19,8 @@
 	background-color: RGB(236,236,236);
 	border-bottom: 1px solid black;
 }
+20240420
+1.代码重构，全部代码只有两层目录
+2.新增服务器user.js用于用户认证（2763005821，2314499817）
+3.新增服务器search1.js用于数据库查询文章
+4.新增user.html页面用于用户登录

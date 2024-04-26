@@ -15,7 +15,6 @@
             console.log('页面已加载完成！');
         });
     </script>
-
 	<style>
 	html{
 		width: 100%;
@@ -47,12 +46,33 @@
 				<img class="upload_1"src="./icons/share.png"></a></div>
 			<div class="favorite"><a href=""title=""style="text-decoration: none; color: black">
 				<img class="upload_1"src="./icons/favorite.png"></a></div>
+
+<script>
+	/*这里是检测URL里是否出现?uname=**（登陆成功），成功后执行以下代码*/
+	document.addEventListener('DOMContentLoaded', (event) => {
+		 // DOM完全加载和解析完成后执行的代码
+	  var name = location.search;
+		// var name = decodeURI(document.URL)//获取到编码的数据并进行解码，推荐
+		//获取到的数据其实是  ?uname=zhangsan'
+		//下面是对数据进行处理
+		name=name.slice(name.indexOf("=")+1)
+		if (name=="FYC")
+		{
+			 console.log(name);
+			var items=document.getElementsByName("username");
+			console.log("是这里:"+items);
+			items[0].style.display='none';
+		}
+	});
+  
+
+</script>
 			<div class="navigation1">
 				<ul>
 					<li>
 						<a href="users.html"><img class="upload_1"src="./icons/myself.png"></a>
 						<div class="clear"></div>
-						<ul class="123">
+						<ul class="123"name="username">
 							<li><a href="styles.html">个人中心</a></li>
 							<li><a href="tables.html">投稿管理</a></li>
 						   <li><a href="typography.html">动态</a></li>
@@ -63,7 +83,7 @@
 					</li>
 					</ul>
 					</div></div>
-				
+
 			<!--导航栏选项/upperoptions.cxx-->
 			<div class="navigation">
 			 <ul>

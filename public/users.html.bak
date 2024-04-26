@@ -7,8 +7,10 @@
 	<link rel="stylesheet"href="./stylesheet/background.css">					<!--背景切换-->
 	<link rel="stylesheet"href="./stylesheet/upperoptions.css">					<!--上横幅及上选项-->
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
+
 	<!--主体-->
 	<script src="user.js" defer></script>
+	<link rel="stylesheet"href="./stylesheet/user_message_box.css">								<!--内容-->
 						<!--内容-->
     <link rel="stylesheet" href="./stylesheet/user.css">
 	<style>
@@ -133,6 +135,41 @@
 				</ul>
 			</div>
 <!--主体-->
+<!--------------------弹窗显示登陆失败 -------------------------------------->
+<div class="window_bg">
+	<div class="window_content">
+		<p id="window_text">登陆失败，账号或密码错误</p>
+		<div class="btnBox">
+			<div style="border-right: 1px solid;" onclick="isNo()">返回</div>
+			<div onclick="isYes()">找回密码</div>
+		</div>
+	</div>
+</div>
+<script>
+//获取弹窗
+let window_bg = document.getElementsByClassName("window_bg")[0]
+// “否”按钮
+function isNo() {
+	window_bg.style.display = "none"
+}
+// “是”按钮
+function isYes(){
+	window_bg.style.display = "none"
+    //可根据需要调整事件
+	window.location.href = "./index.html"
+}
+//点击弹窗外部可隐藏弹窗
+window.onclick = function(event){
+	if(event.target == window_bg){
+		event.target.style.display = "none"
+	}
+}
+// 点击按钮显示弹窗
+function show(){
+	window_bg.style.display = "block"
+}
+</script>
+<!------------------------------------------------------------->
 <div class="user_content">
         <div class="login-wrapper">
             <div class="left-img">
@@ -164,8 +201,10 @@
                         <span class="forgot">忘记密码</span>
                     </div>
                     <button class="btn"onclick="submit()"type="submit">登录</button>
+
+
 <script>
-	function ajax(count,pwd){
+	function ajax(count,pwd,id){
 		let ht = new XMLHttpRequest( ) 
 		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}`)
 		ht.send()
@@ -174,10 +213,15 @@
 			try{
 				console.log(JSON.parse(ht.responseText));
 				ID=JSON.parse(ht.responseText);
+				console.log("ID:");
 				console.log(ID.status);
 				if (ID.status==1)
 				{
-window.location.href = 'http://localhost:3000/index.html'
+					window.location.href = 'http://localhost:3000/index.html?' + 'uname=' + 'FYC';
+				}
+				if(ID.status==0)
+				{
+					show();
 				}
 			}catch(error){
 				console.log("无法转换")
@@ -187,7 +231,7 @@ window.location.href = 'http://localhost:3000/index.html'
 }
 var submit=function(){
 	let count_pwd = document.querySelectorAll(".inputs_1")
-	ajax(count_pwd[0].value,count_pwd[1].value)
+	ajax(count_pwd[0].value,count_pwd[1].value)			//第三个参数表示登录1还是注册2
 }
 </script>
                     <div class="siginup-tips">

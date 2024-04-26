@@ -94,6 +94,7 @@ form .search_main {
 }
 .navigation1 li
 {
+
   display:inline;
   margin-left:10px;
   position:relative;
@@ -122,7 +123,7 @@ form .search_main {
   /*设置导航栏下拉菜单背景颜色*/
   background: white;
   border-radius:5px;
-  display:block;
+  display:none;
   left:0;
   margin-top:32px;
   opacity:0.90;

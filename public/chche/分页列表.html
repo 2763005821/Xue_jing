@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>分页列表示例</title>
+<style>
+  .pagination {
+    display: inline-block;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+ 
+<div id="list-container">
+  <!-- 列表内容将被动态插入此处 -->
+</div>
+ 
+<div class="pagination">
+  <a href="#" onclick="showPage(1)">1</a>
+  <a href="#" onclick="showPage(2)">2</a>
+  <a href="#" onclick="showPage(3)">3</a>
+  <!-- 更多页码可以根据需要添加 -->
+</div>
+ 
+<script>
+  // 假设每页显示3个条目
+  const itemsPerPage = 3;
+  const items = [
+    // 假设这是从数据库获取的数据
+    {id: 1, name: 'Item 1'},
+    {id: 2, name: 'Item 2'},
+	    {id: 1, name: 'Item 1'},
+    {id: 2, name: 'Item 2'},
+	    {id: 1, name: 'Item 1'},
+    {id: 2, name: 'Item 2'},
+	    {id: 1, name: 'Item 1'},
+    {id: 2, name: 'Item 2'},
+	    {id: 1, name: 'Item 1'},
+    {id: 2, name: 'Item 2'},
+    // ...更多条目
+  ];
+ 
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const pageItems = items.slice(start, end);
+    const listHtml = pageItems.map(item => `<p>${item.name}</p>`).join('');
+    document.getElementById('list-container').innerHTML = listHtml;
+  }
+ 
+  // 默认显示第一页
+  showPage(1);
+</script>
+ 
+</body>
+</html>

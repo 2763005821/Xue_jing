@@ -1,0 +1,132 @@
+<template>
+	<div class="TreeSubject">
+		<Section class="c-s-dl">
+			<dl class = "nodeDl">
+			   <dt><span>课程类别</span></dt>
+			   <dd>
+				   <ul>
+					   <li>
+						   <a href="javascript:;">全部</a>
+					   </li>
+					   <li v-for="item in subjectTree" :key="item.id">
+						   <a href="javascript:;" @click="getChildren(item,0)">{{item.title}}</a>
+					   </li>
+				   </ul>
+			   </dd>
+			</dl>
+		</Section>
+	</div>
+</template>
+
+<script>
+	export default{
+		name:"TreeSubject",
+		props:{
+			subjectTree:{
+				type:Array,
+				required:true
+			}
+		},
+		data(){
+			return{
+				
+			}
+		},
+		mounted() {
+		},
+		methods:{
+			getChildren(item,index){//item是每一个课程分类对象，index是层级，0表示根层级
+				
+				if(!item.children){//如果当前对象没有子节点，不执行逻辑
+					return;
+				}
+				
+				const _this=this;//保存this对象
+				
+				let c_s_dl = document.querySelector(".c-s-dl");//获取容器节点
+				let c_s_dl_childNodes = c_s_dl.childNodes;//获取容器所有子节点
+				
+				if(index == 0){//如果是点击根层级，清除根层级以外所有子层级
+					for(let i = c_s_dl_childNodes.length-1;i >= 1;i--){//倒着删，因为删一个length都会变化，这里删除所有不会影响
+						c_s_dl.removeChild(c_s_dl_childNodes[i])
+					}
+				}
+				
+				if(c_s_dl_childNodes.length>index+1){//如果当前点击层级下面已经有层级，先清除所有子层级
+					for(let i = c_s_dl_childNodes.length-1;i >= index+1;i--){//倒着删，因为删一个length都会变化
+						c_s_dl.removeChild(c_s_dl_childNodes[i])
+					}
+				}
+				
+				let dl = document.createElement("dl");//创建一个dl节点
+				let dd = document.createElement("dd");//创建一个dd节点
+				let ul = document.createElement("ul");//创建一个ul节点
+				
+				const cloneData = JSON.parse(JSON.stringify(item.children));// 对源数据深度克隆，拿的是子节点，不深度克隆会改变源数据
+				
+				for(let i = 0;i < cloneData.length;i++){//遍历所有子节点
+				
+					let li =document.createElement("li");//创建li
+					let a = document.createElement("a");//创建a标签
+					
+					a.onclick=function(){//添加点击事件
+					
+						_this.getChildren(cloneData[i],index+1);//同样的添加构建子节点事件
+					}
+					
+					a.innerHTML=cloneData[i].title+"";//为a标签中添加内容
+					
+					li.appendChild(a)//a标签添加到li
+					ul.appendChild(li);//li标签添加到ul
+				}
+				
+				dl.appendChild(dd);//dd添加到dl
+				dd.appendChild(ul);//ul添加到dd
+				c_s_dl.appendChild(dl)//dl添加到容器
+			}
+		},
+	}
+</script>
+
+<style lang="less">
+	@import '@/assets/less/clearfix';//引入清除浮动解决高度塌陷less
+	.TreeSubject{
+		.c-s-dl{
+			dl{
+				background-color: #F7F7F7;
+				height: 50px;
+				position: relative;
+				dt{
+					height: 50px;
+					line-height: 50px;
+					float: left;
+					font-size: 15px;
+					color: #777777;
+					margin-left: 15px;
+				}
+				dd{
+					display: inline-block;
+					height: 50px;
+					margin-left: 0px;
+					position: absolute;
+					left: 100px;
+					ul{
+						&:extend(.clearfix all);//继承高度塌陷混合
+						height: 50px;
+						li{
+							height: 50px;
+							line-height: 50px;
+							float: left;
+							margin-right: 35px;
+							a{
+								color: #23272B;
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+</style>
+

@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+            /* 暗色背景 */
+	        .window_bg{
+	        /* 默认隐藏 */
+		    display: none;
+				/* 固定定位 */
+				position: fixed;
+				/* 设置层级 */
+				z-index: 1;
+				/* 背景铺满全屏 */
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+			.window_content {
+			    background-color: #fefefe;
+			    margin: 15% auto; 
+			    padding: 10px;
+			    border: 1px solid #888;
+			    width: 30%; 
+			border-radius: 10px;
+			}
+			#window_text {
+				padding: 10px;
+				height: 30px;
+			}
+			
+			.btnBox {
+				width: 100%;
+				height: 5%;
+				border-top: 1px solid;
+				display: flex;
+			}
+			
+			.btnBox>div {
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+</style>
+</head>
+<body>
+<div class="window_bg">
+    <!-- 弹窗内容 -->
+	<div class="window_content">
+		<p id="window_text">弹窗的内容....</p>
+		<div class="btnBox">
+			<div style="border-right: 1px solid;" onclick="isNo()">否</div>
+			<div onclick="isYes()">是</div>
+		</div>
+	</div>
+</div>
+<button type="button" onclick="show()">显示弹窗</button>
+<script>
+//获取弹窗
+let window_bg = document.getElementsByClassName("window_bg")[0]
+// “否”按钮
+function isNo() {
+	window_bg.style.display = "none"
+}
+// “是”按钮
+function isYes(){
+	window_bg.style.display = "none"
+    //可根据需要调整事件
+	window.location.href = "./login.html"
+}
+//点击弹窗外部可隐藏弹窗
+window.onclick = function(event){
+	if(event.target == window_bg){
+		event.target.style.display = "none"
+	}
+}
+// 点击按钮显示弹窗
+function show(){
+	window_bg.style.display = "block"
+}
+</script>
+</body>
+</html>
