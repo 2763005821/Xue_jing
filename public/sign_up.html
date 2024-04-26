@@ -137,7 +137,7 @@
 <!--------------------弹窗显示登陆失败 -------------------------------------->
 <div class="window_bg">
 	<div class="window_content">
-		<p id="window_text">注册失败，密码不一致</p>
+		<p id="window_text">{{message}}</p>
 		<div class="btnBox">
 			<div style="border-right: 1px solid;" onclick="isNo()">返回</div>
 			<div onclick="isYes()">找回密码</div>
@@ -209,7 +209,7 @@ function show(){
 <script>
 	function ajax(count,pwd){
 		let ht = new XMLHttpRequest( ) 
-		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}`)
+		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}&func=2`)
 		ht.send()
 		ht.onreadystatechange = function( ){			
 			if(ht.readyState == 4 && ht.status == 200){
@@ -217,13 +217,25 @@ function show(){
 				console.log(JSON.parse(ht.responseText));
 				ID=JSON.parse(ht.responseText);
 				console.log("ID:");
-				console.log(ID.status);
-				if (ID.status==1)
+				console.log(ID.status);				//由服务器传来的ID.status用来判断登录是否成功
+				if (ID.status==1)						//创建成功
 				{
+					alert("创建成功，请重新登录！")
 					window.location.href = 'http://localhost:3000/index.html?' + 'uname=' + 'FYC';
 				}
-				if(ID.status==0)
+				if(ID.status==0)						//创建失败
 				{
+					new Vue({
+						el:"#window_text",
+						data:{
+							message:"创建失败，已存在账号"
+						},
+						methods:{
+							func1:function(msg){
+								this.message="创建失败，已存在账号";
+						}
+						}
+					})
 					show();
 				}
 			}catch(error){

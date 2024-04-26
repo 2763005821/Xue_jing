@@ -206,7 +206,7 @@ function show(){
 <script>
 	function ajax(count,pwd){
 		let ht = new XMLHttpRequest( ) 
-		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}`)
+		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}&func=1`)
 		ht.send()
 		ht.onreadystatechange = function( ){			
 			if(ht.readyState == 4 && ht.status == 200){
@@ -236,7 +236,7 @@ var submit=function(){
 </script>
                     <div class="siginup-tips">
                         <span>还没有账户？</span>
-                        <span>注册</span>
+                        <span><a href="./sign_up.html"title=""style="text-decoration: none; color: black">注册</a></span>
                     </div>
                     <div class="other-login">
                         <div class="divider">

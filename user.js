@@ -13,8 +13,10 @@ const connection = mysql.createConnection({
 
 var server=http.createServer(function(req, res) {		
 	res.setHeader("Access-Control-Allow-Origin","*");
+	let func=url.parse(req.url, true).query.func;
 	let id=url.parse(req.url, true).query.count;
 	let pwd=url.parse(req.url, true).query.pwd;
+	console.log(func,id,pwd);
 // 3 建立连接
 connection.connect((err) => {
   // 连接失败
@@ -26,33 +28,59 @@ connection.connect((err) => {
   console.log('connected as id ' + connection.threadId);
 });
 // 4 增删改查
-var i ="SELECT * FROM mydb.user WHERE id="+id+" and pwd="+pwd+";";
-connection.query( i, (error, results, fields) => {
-  if (error) throw error;
-  if(results[0]){
-	  var status=1;
-	  console.log("12313213213");
-	  console.log('The result is: ', results);
-	  results.forEach((row)=>{
-		  console.log("id: ",row.id);
-		});
-
-		/************************/
-		let values={status:1,data:[12,34,89]}
-		user=1;
-		console.log("user状态:");
-		console.log(user);
-		console.log("登陆成功");
-		res.end(JSON.stringify(values));
-  }
-	else{
-		var status=0;
-		let values={status:0,data:[12,34,89]}
-		console.log("抱歉账号或密码输入错误");
-		res.end(JSON.stringify(values));
-		console.log("888888888888");
-		return 0;
-}})
+//从前端传递的func用来判断登录还是注册
+if(func==1){
+	var i ="SELECT * FROM mydb.user WHERE id="+id+" and pwd="+pwd+";";
+	connection.query( i, (error, results, fields) => {
+	  if (error) throw error;
+	  if(results[0]){					/*如果查询到用户*/
+		  var status=1;
+		  console.log("数据库检测到用户");
+		  console.log('The result is: ', results);
+		  results.forEach((row)=>{
+			  console.log("id: ",row.id);
+			});
+			/************************/
+			let values={status:1,data:[12,34,89]}
+			user=1;
+			console.log("user状态:");
+			console.log(user);
+			console.log("登陆成功\n**************************************************\n");
+			res.end(JSON.stringify(values));
+	  }
+		else{					/*未查询到用户*/
+			var status=0;
+			let values={status:0,data:[12,34,89]}
+			console.log("未查询到用户，抱歉账号或密码输入错误");
+			res.end(JSON.stringify(values));
+			return 0;
+	}})}
+else if(func==2){
+	var i ="INSERT INTO user VALUES ("+id+","+pwd+",null,null,null,null)"
+	connection.query( i, (error, results, fields) => {
+	  if (error) {
+			var status=0;				/*status用来返回查询状态*/
+			let values={status:0,data:[12,34,89]}
+			console.log("创建失败，已经存在账号");
+			res.end(JSON.stringify(values));;
+			return 0;
+		  throw error;
+	  }
+	  else{					
+		  var status=1;
+		  console.log("用户创建成功");
+		  console.log('The result is: ', results);
+			/************************/
+			let values={status:1,data:[12,34,89]}
+			user=1;
+			console.log("user状态:");
+			console.log(user);
+			console.log("登陆成功\n**************************************************\n");
+			res.end(JSON.stringify(values));
+	  }
+	})
+}
+ 
 //调试：当id=0时，断开连接
 if(id==0)
 	connection.end(); 
