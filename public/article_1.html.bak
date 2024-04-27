@@ -10,6 +10,7 @@
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
 	<link rel="stylesheet"href="./stylesheet/article_1.css">								<!--内容-->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>			<!--引入Vue.js-->
+	<script src="./javascripts/DPlayer.min.js"></script>								<!--引入播放器-->
     <script>
         // 这里放置立即执行的JavaScript代码
         document.addEventListener('DOMContentLoaded', (event) => {
@@ -230,7 +231,7 @@
 	<div class="article_1_main_goal">
 		<h2 style="margin-left: 20px;">
 			<i class="article_1_main_goal_blue_bar"></i>
-			<span class="article_1_main_goal_title">实验结果</span></h2>
+			<span class="article_1_main_goal_title">思考与讨论</span></h2>
 		<ul  class="article_1_main_goal_ul">
 		<li>
 			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
@@ -238,6 +239,23 @@
 		<li>
 				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
 		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验视频</span></h2>
+			<div id="dplayer"></div>
+			<!--视频播放器，框架：Dplayer-->
+				<script>
+				const dp = new DPlayer({
+					container: document.getElementById('dplayer'),
+					video: {
+						url: './pages/1.mp4',
+					},
+				});
+				</script></div>
+
+
 
 
 </div>

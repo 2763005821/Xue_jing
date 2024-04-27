@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"description": "Biology server",
 	"dependencies": {
+		"dplayer": "^1.27.1",
 		"express": "^4.19.2",
 		"jsdom": "^24.0.0",
 		"mime": "~1.2.7",

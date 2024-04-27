@@ -61,7 +61,7 @@
 			 console.log(name);
 			var items=document.getElementsByName("username");
 			console.log("是这里:"+items);
-			items[0].style.display='none';
+			items[0].style.display='block';
 		}
 	});
   
