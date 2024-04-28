@@ -35,7 +35,6 @@
 		<div class="white_bar"></div>
 		<form class="search1"target="_blank" method="get" action="https://www.baidu.com/s">
 				<input type="text" placeholder="请输入关键词" name="word" class="text"/>
-				<button><svg t="1714182500976" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4278" width="50" height="50"><path d="M456.32 176a312.32 312.32 0 1 1-312.32 312.32 312.32 312.32 0 0 1 312.32-312.32m0-64A376.32 376.32 0 1 0 832 488.32a376.32 376.32 0 0 0-375.68-376.32z" fill="#2c2c2c" p-id="4279"></path><path d="M709.76 709.76a32 32 0 0 0-22.4 54.4l181.12 181.12a32 32 0 0 0 45.44-45.44l-181.12-181.12a32 32 0 0 0-22.4-9.6z" fill="#2c2c2c" p-id="4280"></path></svg></button>
 				<input type="submit" value="搜索" class="search_main"></form>
 
 			<div class="upload"><a href=""title=""style="text-decoration: none; color: black">
@@ -58,12 +57,13 @@
 		//获取到的数据其实是  ?uname=zhangsan'
 		//下面是对数据进行处理
 		name=name.slice(name.indexOf("=")+1)
-		if (name=="FYC")
+		if (name)
 		{
 			 console.log(name);
 			var items=document.getElementsByName("username");
 			console.log("是这里:"+items);
 			items[0].style.display='block';
+			var items=document.getElementsByName("username");
 		}
 	});
   

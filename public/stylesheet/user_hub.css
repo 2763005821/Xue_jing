@@ -1,0 +1,101 @@
+.user_hub_main{
+	position: absolute;
+	top: 8%;
+	left: 20%;
+
+}
+.user_hub_upper_img{
+	width: 1200px;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+	object-fit: scale-down; /* 保持图片原有尺寸不变，不会被拉伸 */
+}
+.user_hub_upper_img_level{
+	position: relative;
+	left: 1100px;
+	top: 50px;
+	display: inline-block;		/*自适应宽度*/
+	color: white;
+	font-size: 18px;
+	padding: 8px;
+	background-color: rgba(0,0,0,.2); 
+	border-radius: 5px;
+}
+.user_hub_upper_user_white_bar{
+	float: left;
+	width: 1200px;
+	height: 160px;
+
+	top: 100px;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+}
+.user_hub_upper_user_white_bar_profile{
+	position: relative;
+	top: -30px;
+	left: 30px;
+	width: 160px;
+	height: 160px;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+.user_hub_upper_user_white_bar_title{
+	position: relative;
+	top: -150px;
+	left: 230px;
+}
+.user_hub_upper_user_white_bar_name{
+	display: inline-block;		/*自适应宽度*/
+	float: left;
+	font-size: 30px;
+}
+.user_hub_upper_user_white_bar_slogan{
+	margin: 8px;
+	float: left;
+}
+.clear{
+	clear: both;
+}
+.user_hub_upper_user_white_bar_job_icon{
+	float: left;	
+	margin-top: 15px;
+}
+.user_hub_upper_user_white_bar_job{
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.user_hub_upper_user_white_bar_school_icon{
+	float: left;	
+	margin-left: -5px;
+	margin-top: 10px;
+}
+.user_hub_upper_user_white_bar_school{
+	float: left;	
+	margin-top: 15px;
+	margin-left: 5px;
+		display: inline-block;		/*自适应宽度*/
+
+}
+.user_hub_upper_user_white_bar_profession{
+	float: left;	
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.sex{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.user_hub_upper_user_white_bar_edit{
+
+	display: inline-block;		/*自适应宽度*/
+	position: relative;
+	padding: 10px;
+	border: 2px solid #14b9ce;
+	top: -180px;
+	left: 1030px;
+	border-radius: 5px;
+}
+.user_hub_upper_user_white_bar_edit_a:hover{
+	color: #14b9ce;
+}
+.user_hub_upper_user_white_bar_edit_a{
+	color: black;
+}

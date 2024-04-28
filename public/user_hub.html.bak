@@ -8,6 +8,7 @@
 	<link rel="stylesheet"href="./stylesheet/background.css">					<!--背景切换-->
 	<link rel="stylesheet"href="./stylesheet/upperoptions.css">					<!--上横幅及上选项-->
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
+	<link rel="stylesheet"href="./stylesheet/user_hub.css">								<!--内容-->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>			<!--引入Vue.js-->
     <script>
         // 这里放置立即执行的JavaScript代码
@@ -169,6 +170,29 @@
 			</div>
 	<!--主体-->
 	<div class="user_hub_main">
+		<div class="user_hub_upper">
+			<div class="user_hub_upper_img_level">等级 10</div>
+			<div class="user_hub_upper_img">
+				<img class="user_hub_upper_img"style="float: left;"src="./images/ancient_gril.jpg" alt="flag"></div>
+			<div class="user_hub_upper_user_white_bar">
+				<img class="user_hub_upper_user_white_bar_profile"src="./images/bridy.png">
+				<div class="user_hub_upper_user_white_bar_title">
+					<div class="user_hub_upper_user_white_bar_name">空城旧梦</div>
+					<div class="user_hub_upper_user_white_bar_slogan">行成于思</div>
+					<div class="clear"></div>
+					<svg class="user_hub_upper_user_white_bar_job_icon"t="1714296157832" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1492" width="20" height="20"><path d="M415.244444 102.375c0-18.875 15.25-34.125 34.125-34.125h204.75c18.875 0 34.125 15.25 34.125 34.125V136.5H415.244444V102.375zM492.994444 548.875c0 32.375 26.375 58.75 58.75 58.75s58.75-26.375 58.75-58.75c0-13.5-4.625-26.375-12.875-36.625h-91.75c-8.375 10.375-12.875 23.25-12.875 36.625z" fill="#515151" p-id="1493"></path><path d="M961.369444 136.5H756.494444V68.25c0-37.625-30.625-68.25-68.25-68.25H415.244444c-37.625 0-68.25 30.625-68.25 68.25V136.5H142.119444c-75.375 0-136.5 61.125-136.5 136.5v614.375C5.619444 962.875 66.744444 1024 142.119444 1024h819.25c75.375 0 136.5-61.125 136.5-136.5V273.125C1097.869444 197.625 1036.744444 136.5 961.369444 136.5z m68.25 375.75H675.119444c3.5 11.75 5.375 24.125 5.375 36.625 0 71-57.75 128.75-128.75 128.75s-128.75-57.75-128.75-128.75c0-12.5 1.875-24.875 5.25-36.625H73.869444v-70h549.875v-0.125s0.125 0 0.125 0.125h405.75v70z" fill="#515151" p-id="1494"></path></svg>
+					<div class="user_hub_upper_user_white_bar_job">生物工程</div>
+					<div class="clear"></div>
+					<svg class="user_hub_upper_user_white_bar_school_icon"t="1714296475962" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5275" width="30" height="30"><path d="M784 807.04V560.896l-272.128 122.368a7.808 7.808 0 0 1-8.32-0.128l-261.248-120.576V807.168c0 19.328 121.344 83.2 270.848 83.2 149.632 0 270.848-63.744 270.848-83.328 0 0.128 0 0.128 0 0z" fill="#515151" p-id="5276"></path><path d="M897.408 689.92h-3.84V446.592l2.56-1.152c7.168-4.48 7.296-15.36 0.128-19.968L522.752 253.056a7.808 7.808 0 0 0-8.32-0.128l-384.256 172.8c-7.168 4.48-7.296 15.36-0.128 19.968l373.504 172.416c2.56 1.664 5.76 1.664 8.32 0.128l349.184-157.056 4.736-2.048-0.384 230.784h-3.84c-3.712 0-6.656 3.2-6.656 7.04v78.592c0 3.84 2.944 7.04 6.656 7.04h35.84c3.712 0 6.656-3.2 6.656-7.04v-78.592c0-3.84-2.944-7.04-6.656-7.04z" fill="#515151" p-id="5277"></path></svg>
+					<div class="user_hub_upper_user_white_bar_school">华北理工大学</div>
+					<div class="user_hub_upper_user_white_bar_profession">生物信息学</div>
+					<svg class="sex"t="1714298029524" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6700" width="20" height="20"><path d="M412.1 895.3C255.4 895.3 128 767.8 128 611.1 128 454.5 255.4 327 412.1 327c156.7 0 284.1 127.5 284.1 284.1 0 156.7-127.4 284.2-284.1 284.2z m0-504.6c-121.6 0-220.5 98.9-220.5 220.6s98.9 220.6 220.5 220.6S632.7 733 632.7 611.3s-99-220.6-220.6-220.6z" fill="#515151" p-id="6701"></path><path d="M590.6 465.6c-8.5 0-16.4-3.3-22.5-9.3-6-6-9.3-14-9.3-22.5s3.3-16.5 9.3-22.5l272.9-273c6-6 14-9.3 22.5-9.3s16.5 3.3 22.5 9.3c6 6 9.3 14 9.3 22.5s-3.3 16.5-9.3 22.5L613 456.2c-6 6-14 9.4-22.4 9.4z" fill="#515151" p-id="6702"></path><path d="M864.2 484.8c-17.5 0-31.8-14.3-31.8-31.8V192.3H571.8c-17.5 0-31.8-14.3-31.8-31.8s14.3-31.8 31.8-31.8h292.5c17.5 0 31.8 14.3 31.8 31.8V453c-0.1 17.5-14.4 31.8-31.9 31.8z" fill="#515151" p-id="6703"></path></svg>
+				</div>
+				
+				<div class="user_hub_upper_user_white_bar_edit">
+					<a class="user_hub_upper_user_white_bar_edit_a"href=""title=""style="text-decoration: none;">编辑个人资料</a></div>
+			</div>
+		</div>	
 	</div>
 
 

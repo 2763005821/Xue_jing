@@ -9,7 +9,8 @@ const connection = mysql.createConnection({
   user: 'root', // 用户名 默认root
   password: '2314499817', // 自己在MySQL中设置的密码
   database: 'mydb', // 数据库名字（不是表名）
-})
+}) 
+/*************************************************************************************/
 
 var server=http.createServer(function(req, res) {		
 	res.setHeader("Access-Control-Allow-Origin","*");
@@ -44,8 +45,23 @@ if(func==1){
 		  results.forEach((row)=>{
 			  console.log("id: ",row.id);
 			});
-			/************************/
-			let values={status:1,data:[12,34,89],results}
+			/***********登录成功，生成认证key*************/
+			//定义一个key生成函数
+			function generatePassword(length) {
+			  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+			  let password = '';
+			  
+			  for (let i = 0; i < length; i++) {
+				const randomIndex = Math.floor(Math.random() * characters.length);
+				password += characters.charAt(randomIndex);
+			  }
+			  
+			  return password;
+			}
+			var key=generatePassword(8);					//这就是我们用来判断用户身份的key，发给客户端
+			console.log("用户",results[0].id,"分配到的key为：",key);
+
+			let values={status:1,results,key}
 			user=1;
 			console.log("user状态:");
 			console.log(user);
@@ -105,7 +121,7 @@ else if(func==3){
 			console.log("登陆成功\n**************************************************\n");
 			res.end(JSON.stringify(values));
 	  }
-		else{					/*未查询到用户*/
+		else{					/*未查询到文章*/
 			var status=0;
 			let values={status:0}
 			console.log("未查询到文章");

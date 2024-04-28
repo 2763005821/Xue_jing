@@ -141,7 +141,7 @@
 <!--网站主体-->
 		<div class="id">
 		<div class="biochemistry_search-form">
-			  <form id="biochemistry_searchForm" action="/search" method="get">
+			  <form id="biochemistry_searchForm" action="search.html" method="get">
 			 <input  id="search_main"class="biochemistry_search-input" onkeyup="filterList()"type="text" name="query" placeholder="请输入实验名称...">
 			<input class="biochemistry_search-button"type="submit" value="搜索">
 		 </form></div></div>
@@ -351,7 +351,10 @@ function revertUTF8(szInput) {
 					}
 					if(ID.status==0)
 					{
-						
+						var  search_msg=document.createElement("div");
+							search_msg.className="search_msg";
+							search_msg.innerHTML="未查询到结果。";
+							biochemistry_search_ul.appendChild(search_msg);
 					}
 				}catch(error){
 					console.log("无法转换")

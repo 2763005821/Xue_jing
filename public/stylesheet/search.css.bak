@@ -34,7 +34,7 @@
 .end1{
 	z-index: 1;
 	position: absolute;
-	top: 1241px;
+	top: 241px;
 	left: 0px;
 	width: 100%;
 	height: 100px;
@@ -434,3 +434,7 @@
 	text-overflow: ellipsis; /* 超出部分显示为省略号 */
 	text-align: center;
 }
+/*****************************************/
+.search_msg{
+	font-size: 20px;
+	}

@@ -434,3 +434,7 @@
 	text-overflow: ellipsis; /* 超出部分显示为省略号 */
 	text-align: center;
 }
+/*****************************************/
+.search_msg{
+	font-size: 20px;
+}

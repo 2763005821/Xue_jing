@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -8,8 +8,9 @@
 	<link rel="stylesheet"href="./stylesheet/background.css">					<!--背景切换-->
 	<link rel="stylesheet"href="./stylesheet/upperoptions.css">					<!--上横幅及上选项-->
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
-	<link rel="stylesheet"href="./stylesheet/user_hub.css">								<!--内容-->
+	<link rel="stylesheet"href="./stylesheet/article_1.css">								<!--内容-->
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>			<!--引入Vue.js-->
+	<script src="./javascripts/DPlayer.min.js"></script>								<!--引入播放器-->
     <script>
         // 这里放置立即执行的JavaScript代码
         document.addEventListener('DOMContentLoaded', (event) => {
@@ -46,34 +47,13 @@
 				<img class="upload_1"src="./icons/share.png"></a></div>
 			<div class="favorite"><a href=""title=""style="text-decoration: none; color: black">
 				<img class="upload_1"src="./icons/favorite.png"></a></div>
-
-<script>
-	/*这里是检测URL里是否出现?uname=**（登陆成功），成功后执行以下代码*/
-	document.addEventListener('DOMContentLoaded', (event) => {
-		 // DOM完全加载和解析完成后执行的代码
-	  var name = location.search;
-		// var name = decodeURI(document.URL)//获取到编码的数据并进行解码，推荐
-		//获取到的数据其实是  ?uname=zhangsan'
-		//下面是对数据进行处理
-		name=name.slice(name.indexOf("=")+1)
-		if (name=="FYC")
-		{
-			 console.log(name);
-			var items=document.getElementsByName("username");
-			console.log("是这里:"+items);
-			items[0].style.display='block';
-		}
-	});
-  
-
-</script>
 			<div class="navigation1">
 				<ul>
 					<li>
 						<a href="users.html"><img class="upload_1"src="./icons/myself.png"></a>
 						<div class="clear"></div>
-						<ul class="123"name="username">
-							<li><a href="user_hub.html">个人中心</a></li>
+						<ul class="123">
+							<li><a href="styles.html">个人中心</a></li>
 							<li><a href="tables.html">投稿管理</a></li>
 						   <li><a href="typography.html">动态</a></li>
 						   <li><a href="flexible_columns.html">历史</a></li>
@@ -83,7 +63,7 @@
 					</li>
 					</ul>
 					</div></div>
-
+				
 			<!--导航栏选项/upperoptions.cxx-->
 			<div class="navigation">
 			 <ul>
@@ -157,47 +137,145 @@
 
    </ul>
 </li>
-<!--
- <li>
-   <a href="about.html">About</a>
-   <div class="clear"></div>
-                        </li>
-                        <li>
-   <a href="contact.html">Contact</a>
-   <div class="clear"></div>
-                        </li>-->
 				</ul>
 			</div>
-	<!--主体-->
-	<div class="user_hub_main">
-		<div class="user_hub_upper">
-			<div class="user_hub_upper_img_level">等级 10</div>
-			<div class="user_hub_upper_img">
-				<img class="user_hub_upper_img"style="float: left;"src="./images/ancient_gril.png" alt="flag"></div>
-			<div class="user_hub_upper_user_white_bar">
-				<img class="user_hub_upper_user_white_bar_profile"src="./images/bridy.png">
-				<div class="user_hub_upper_user_white_bar_title">
-					<div class="user_hub_upper_user_white_bar_name">空城旧梦</div>
-					<div class="user_hub_upper_user_white_bar_slogan">行成于思</div>
-					<div class="clear"></div>
-					<svg class="user_hub_upper_user_white_bar_job_icon"t="1714296157832" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1492" width="20" height="20"><path d="M415.244444 102.375c0-18.875 15.25-34.125 34.125-34.125h204.75c18.875 0 34.125 15.25 34.125 34.125V136.5H415.244444V102.375zM492.994444 548.875c0 32.375 26.375 58.75 58.75 58.75s58.75-26.375 58.75-58.75c0-13.5-4.625-26.375-12.875-36.625h-91.75c-8.375 10.375-12.875 23.25-12.875 36.625z" fill="#515151" p-id="1493"></path><path d="M961.369444 136.5H756.494444V68.25c0-37.625-30.625-68.25-68.25-68.25H415.244444c-37.625 0-68.25 30.625-68.25 68.25V136.5H142.119444c-75.375 0-136.5 61.125-136.5 136.5v614.375C5.619444 962.875 66.744444 1024 142.119444 1024h819.25c75.375 0 136.5-61.125 136.5-136.5V273.125C1097.869444 197.625 1036.744444 136.5 961.369444 136.5z m68.25 375.75H675.119444c3.5 11.75 5.375 24.125 5.375 36.625 0 71-57.75 128.75-128.75 128.75s-128.75-57.75-128.75-128.75c0-12.5 1.875-24.875 5.25-36.625H73.869444v-70h549.875v-0.125s0.125 0 0.125 0.125h405.75v70z" fill="#515151" p-id="1494"></path></svg>
-					<div class="user_hub_upper_user_white_bar_job">生物工程</div>
-					<div class="clear"></div>
-					<svg class="user_hub_upper_user_white_bar_school_icon"t="1714296475962" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5275" width="30" height="30"><path d="M784 807.04V560.896l-272.128 122.368a7.808 7.808 0 0 1-8.32-0.128l-261.248-120.576V807.168c0 19.328 121.344 83.2 270.848 83.2 149.632 0 270.848-63.744 270.848-83.328 0 0.128 0 0.128 0 0z" fill="#515151" p-id="5276"></path><path d="M897.408 689.92h-3.84V446.592l2.56-1.152c7.168-4.48 7.296-15.36 0.128-19.968L522.752 253.056a7.808 7.808 0 0 0-8.32-0.128l-384.256 172.8c-7.168 4.48-7.296 15.36-0.128 19.968l373.504 172.416c2.56 1.664 5.76 1.664 8.32 0.128l349.184-157.056 4.736-2.048-0.384 230.784h-3.84c-3.712 0-6.656 3.2-6.656 7.04v78.592c0 3.84 2.944 7.04 6.656 7.04h35.84c3.712 0 6.656-3.2 6.656-7.04v-78.592c0-3.84-2.944-7.04-6.656-7.04z" fill="#515151" p-id="5277"></path></svg>
-					<div class="user_hub_upper_user_white_bar_school">华北理工大学</div>
-					<div class="user_hub_upper_user_white_bar_profession">生物信息学</div>
-					<svg class="sex"t="1714298029524" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6700" width="20" height="20"><path d="M412.1 895.3C255.4 895.3 128 767.8 128 611.1 128 454.5 255.4 327 412.1 327c156.7 0 284.1 127.5 284.1 284.1 0 156.7-127.4 284.2-284.1 284.2z m0-504.6c-121.6 0-220.5 98.9-220.5 220.6s98.9 220.6 220.5 220.6S632.7 733 632.7 611.3s-99-220.6-220.6-220.6z" fill="#515151" p-id="6701"></path><path d="M590.6 465.6c-8.5 0-16.4-3.3-22.5-9.3-6-6-9.3-14-9.3-22.5s3.3-16.5 9.3-22.5l272.9-273c6-6 14-9.3 22.5-9.3s16.5 3.3 22.5 9.3c6 6 9.3 14 9.3 22.5s-3.3 16.5-9.3 22.5L613 456.2c-6 6-14 9.4-22.4 9.4z" fill="#515151" p-id="6702"></path><path d="M864.2 484.8c-17.5 0-31.8-14.3-31.8-31.8V192.3H571.8c-17.5 0-31.8-14.3-31.8-31.8s14.3-31.8 31.8-31.8h292.5c17.5 0 31.8 14.3 31.8 31.8V453c-0.1 17.5-14.4 31.8-31.9 31.8z" fill="#515151" p-id="6703"></path></svg>
-				</div>
-				
-				<div class="user_hub_upper_user_white_bar_edit">
-					<a class="user_hub_upper_user_white_bar_edit_a"href=""title=""style="text-decoration: none;">编辑个人资料</a></div>
-			</div>
-		</div>	
+<!--主体-->
+<div class="biochemistry_location">
+			<a href="index.html"title=""style="text-decoration: none; color: black">首页</a> >
+			<a href="./experiment.html"title=""style="text-decoration: none; color: black">实验共享</a> >
+			<a href="./biochemistry.html"title=""style="text-decoration: none; color: black">生物化学</a> >
+						<a href=""title=""style="text-decoration: none; color: black">碱性磷酸酶的提取</a></div>
+<div class="article_1_main">
+	<div class="article_1_main_title">碱性磷酸酶的提取
+		<div class="article_1_main_title_brief">基础生物化学实验</div>
+		<p class="article_1_main_title_introduction">概述:<a class="article_1_main_name_ul_a"href=""title=""style="font-weight: 600;">碱性磷酸酶</a>(alkaline phosphatase, EC 3. 1, 简称ALP)广泛存在于动物、植物与微生物中在化学组成上, ALP为含锌的糖蛋白,是一类在碱性条件(PH9-11)下具有高催化活性,能.催化几乎所有磷酸单酯键生成无机正磷酸和对应醇、酚和糖等物质的一组水解酶类。 ALP作为动物代谢过程中重要的调控酶参与磷代谢活动，与海水中磷质和钙质的吸取、磷酸钙的生成、甲壳素的形成和分泌直接相关,且参与动物体内钙磷的代谢,维持适宜的钙磷比例,对动物的生存具有重要的意义。</p>
+		<div class="article_1_main_name">
+			<ul class="article_1_main_name_ul">
+				<li class="article_1_main_name_ul_li_1">中文名:<a class="article_1_main_name_ul_a"href=""title="">碱性磷酸酶的提取及比活性测定</a></li>
+				<li class="article_1_main_name_ul_li_1"style="font-size:18px;">英文名: Extraction and characterization of crude alkal ine phosphatase</li>
+				<li class="article_1_main_name_ul_li_1">类型:<a class="article_1_main_name_ul_a"href=""title="">实验共享</a></li>
+				<li class="article_1_main_name_ul_li_1">学科:<a class="article_1_main_name_ul_a"href=""title="">生物化学</a></li>
+			</ul>
+		</div>
+		<div class="article_1_main_title_plus">
+			<div class="article_1_main_title_plus_title">目录</div>
+			 <ul class="article_1_main_title_plus_ul">
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">1.实验目的</a></li>
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">2.实验原理</a></li>
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">3.主要设备、实验材料和试剂</a></li>
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">4.实验步骤</a></li>
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">5.实验结果</a></li>
+					<li class="article_1_main_title_plus_ul_li"><a href=""title="">6.思考与讨论</a></li>
+			</ul>
+</div></div>
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验目的</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验原理</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">主要设备、实验材料和试剂</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验步骤</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验结果</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">思考与讨论</span></h2>
+		<ul  class="article_1_main_goal_ul">
+		<li>
+			<hr class="article_1_main_goal_ul_li_line"><!--条目分隔线-->
+				<div class="article_1_main_goal_ul_li">1. 学习蛋白质分离纯化的一般原理和步骤</div></li>
+		<li>
+				<div class="article_1_main_goal_ul_li">2. 学学握碱性磷酸酶制备的操作技术及比活力测定的方法</div></li>
+		</ul></div>
+
+	<div class="article_1_main_goal">
+		<h2 style="margin-left: 20px;">
+			<i class="article_1_main_goal_blue_bar"></i>
+			<span class="article_1_main_goal_title">实验视频</span></h2>
+			<div id="dplayer"></div>
+			<!--视频播放器，框架：Dplayer-->
+				<script>
+				const dp = new DPlayer({
+					container: document.getElementById('dplayer'),
+					video: {
+						url: './pages/1.mp4',
+					},
+					danmaku: {
+						addition: ['https://api.prprpr.me/dplayer/v3/bilibili?aid=[aid]'],
+					},
+				});
+				</script></div>
+
+
+
+
+</div>
+	<div class="article_1_main_imgs">
+		<a href=""title=""style="text-decoration: none; color: RGB(50,50,50);">
+		<img class="article_1_1"src="./images/article_1_1.png">
+		<div class="article_1_main_imgs_brief"><svg t="1713797011811" class="icon" viewBox="0 0 1179 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6153" width="25" height="25"><path d="M432.872727 377.018182c0-62.836364-51.2-111.709091-111.709091-111.709091-62.836364 0-111.709091 51.2-111.709091 111.709091s51.2 111.709091 111.709091 111.709091c60.509091 2.327273 111.709091-48.872727 111.709091-111.709091z m-179.2 0c0-37.236364 30.254545-65.163636 65.163637-65.163637s65.163636 30.254545 65.163636 65.163637-30.254545 65.163636-65.163636 65.163636-65.163636-27.927273-65.163637-65.163636z" fill="#515151" p-id="6154"></path><path d="M344.436364 677.236364l211.781818-130.327273 190.836363 114.036364c6.981818 4.654545 16.290909 4.654545 23.272728 0l169.890909-104.727273c6.981818-4.654545 11.636364-11.636364 11.636363-20.945455V251.345455c2.327273-60.509091-46.545455-111.709091-109.381818-111.709091H181.527273C118.690909 139.636364 69.818182 190.836364 69.818182 251.345455v521.30909C69.818182 833.163636 118.690909 884.363636 181.527273 884.363636h660.945454c60.509091 0 111.709091-48.872727 111.709091-111.709091V674.909091c0-13.963636-9.309091-23.272727-23.272727-23.272727s-23.272727 9.309091-23.272727 23.272727v97.745454c0 34.909091-30.254545 65.163636-65.163637 65.163637H181.527273C146.618182 837.818182 116.363636 807.563636 116.363636 772.654545V251.345455C116.363636 216.436364 146.618182 186.181818 181.527273 186.181818h660.945454c34.909091 0 65.163636 30.254545 65.163637 65.163637v269.963636l-146.618182 90.763636-190.836364-114.036363c-6.981818-4.654545-16.290909-4.654545-23.272727 0l-223.418182 137.309091c-11.636364 6.981818-13.963636 20.945455-6.981818 32.581818 2.327273 11.636364 16.290909 13.963636 27.927273 9.309091z" fill="#515151" p-id="6155"></path></svg>碱性磷酸酶的提取及比活性测定的概述图（一张）</a></div>
 	</div>
 
+	
 
 
-<div class="end_plus">
+
+
+
+<!--------------------------------------------->
+<div class="article_end_plus"id="end">
 			<div class="end_plus_title">
 				<div class="end_plus_title1">学境</div>
 				<div class="end_plus_title2">常用链接</div>
@@ -233,9 +311,7 @@
 						<div class="end_plus_box3_ul_location_text">2763005821@qq.com</div></li></li>
 				<ul>
 			</div>
-
-		</div>
-		<div class="end">
+		<div class="end1">
 			<img class="end_logo"style="float: left;"src="./icons/logo_main7.png" alt="flag">
 			<p class="end_text">学境由华北理工大学学生团队开发及运维，本站坚持知识共享精神，全部内容供网友自由使用 | 
 				<a href="https://bio.ncst.edu.cn/"title=""style="text-decoration: none; color: RGB(0,160,230); ">华北理工大学生命科学学院</a></p>
