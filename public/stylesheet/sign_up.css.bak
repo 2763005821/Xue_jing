@@ -1,0 +1,654 @@
+* {
+	font-family:"Microsoft YaHei"; 
+}
+
+.biochemistry_location{
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	font-family:"等线"; 
+	font-size: 20px;
+
+}
+.biochemistry_main_img{
+	position: absolute;
+	top: 10%;
+	left: 0%;
+}
+	.white_bar1{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 95px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200), -5px -5px 10px RGB(150,150,150);
+	}
+.users_end_plus{
+	z-index: 1;
+	position: absolute;
+	top: 979px;
+	left: 0px;
+	width: 100%;
+	height: 240px;
+	background-color: RGB(236,236,236);
+	border-bottom: 1px solid black;
+}
+.end1{
+	z-index: 1;
+	position: absolute;
+	top: 241px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: RGB(236,236,236);
+}
+/******************************************/
+.id{
+	position: absolute;
+	top: 44%;
+	left: 25%;
+	}
+ .biochemistry_search-form {
+    display: absolute;
+	top: 100px;
+	left: 100px;
+
+    }
+    .biochemistry_search-input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 900px;
+      transition: box-shadow 0.3s ease;
+    }
+    .biochemistry_search-input:focus {
+      outline: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .biochemistry_search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .biochemistry_search-button:hover {
+      background-color: #45a049;
+    }
+/*******************滚动图片栏**********************************/
+.container{
+
+    width: 1000px;
+    /* 相对定位 */
+    position: absolute;
+	top: 16%;
+	left:25%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.biochemistry_picture{
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.biochemistry_picture_li{
+    list-style: none;
+    height: 100%;
+    padding-right: 20px;
+}
+.biochemistry_picture_li img{
+    width: 200px;
+    height: 150px;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+    /* 图片定位正中间 */
+    object-position: center;
+}
+.biochemistry_picture_li_box{
+	position: relative;
+	top: -55px;
+	left: 0px;
+	z-index: 9;
+	background: rgba(0,0,0,.6); 
+	width: 200px;
+	height: 55px;
+}
+.biochemistry_picture_li_box_title{
+	position: relative;
+	top: 5px;
+	left: 5px;
+	font-size: 15px;
+	color: white;
+}
+.biochemistry_picture_li_box_text{
+	position: relative;
+	top: 10px;
+	left: 5px;
+	font-size: 10px;
+	width: 190px;
+	color: white;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn{
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin: 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+/*****************欢迎栏**********************************/
+.biochemistry_greeting_bar{
+	position: absolute;
+	background-color: white;
+	z-index: 3;
+	top: 54%;
+	left: 25%;
+	width: 1010px;
+	border:1px solid RGB(210,210,210);
+	box-shadow: 5px 5px 10px RGB(190,190,190);
+	border-radius: 5px;
+
+}
+.biochemistry_greeting_bar1{
+	float: left;
+	width: 250px;
+	margin: 0px;
+	height: 80px;
+	text-align: center; 
+	vertical-align: middle;
+}
+.biochemistry_greeting_bar1_main{
+	/*字体框相对位置*/
+	margin-top: 25px;
+	font-size: 30px;
+	color: RGB(30,150,200);
+}
+.biochemistry_greeting_bar1_stick{
+	border:1px solid RGB(210,210,210);
+	float:left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 80px;
+}
+/**********************每周推荐*****************************/
+.biochemistry_daily_push{
+	position: absolute;
+	z-index: 3;
+	top: 75%;
+	left: 5%;
+	background-color: white;
+	border-radius: 5px;
+	width: 1100px;
+}
+.biochemistry_daily_push_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_daily_push_title{
+	padding-left: 8px;
+}
+.biochemistry_daily_push_ul{
+	margin-top: -10px;
+    height: 600px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_daily_push_ul_li_line{
+	position: relative;
+	left: -15px;
+	color: RGB(256,256,256);
+}
+.biochemistry_daily_push_blue_bar_items{
+	margin: 0px;
+	padding: 0px;
+}
+.biochemistry_daily_push_blue_bar_items:hover{
+	background-color: RGB(236,236,236);
+}
+.biochemistry_daily_push_ul:hover{
+
+}
+.biochemistry_daily_push_blue_bar_img{
+	margin: 8px;
+	width: 40%;
+	height: 40%;
+}
+.biochemistry_daily_push_blue_bar_item{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+	width: 580px;
+}
+.biochemistry_daily_push_blue_bar_item_name{
+	font-size: 20px;
+	font-weight: 700;
+}
+/*这是每周推荐的超链接悬停效果控制（注意伪类顺序！）*/
+.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:visited{
+	color: black;
+}
+.all > .biochemistry_daily_push > .biochemistry_daily_push_ul > li > .biochemistry_daily_push_blue_bar_items > .biochemistry_daily_push_blue_bar_item>  .biochemistry_daily_push_blue_bar_item_name a:hover{
+	color: #14b9ce;
+}
+.biochemistry_daily_push_blue_bar_item_eng{
+	position: relative;
+	color: RGB(30,150,200);
+	font-weight: 500;
+	top: -25px;
+	left: 505px;
+	width: 70px;
+	text-align: center; 
+	vertical-align: middle;
+	font-size: 15px;
+	border: 1px solid RGB(30,150,200);
+	border-radius: 5px;
+}
+/**********************************************************/
+.biochemistry_news{
+	position: absolute;
+	z-index: 3;
+	top: 75%;
+	left: 65%;
+	background-color: white;
+	border-radius: 5px;
+	width: 400px;
+}
+.biochemistry_news_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_news_title{
+	padding-left: 8px;
+}
+.biochemistry_news_ul{
+	margin-top: -10px;
+    height: 250px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_news_ul_li_line{
+	position: relative;
+	margin: 8px;
+	left: -20px;
+	width: 350px;
+	color: RGB(256,256,256);
+}
+.biochemistry_news_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_news_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_news_ul_li_item1{
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
+.biochemistry_news_ul_li_time1{
+	color: RGB(120,120,120);
+	margin-left: 50px;
+	float: left;
+}
+/********************分享排行榜*****************************/
+.biochemistry_top_sharer{
+	position: absolute;
+	z-index: 3;
+	top: 112%;
+	left: 65%;
+	background-color: white;
+	border-radius: 5px;
+	width: 400px;
+}
+.biochemistry_top_sharer_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_top_sharer_title{
+	padding-left: 8px;
+}
+.biochemistry_top_sharer_ul{
+	margin-top:-10px;
+	margin-left: 13px;
+    height: 250px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_top_sharer_ul_li_line{
+	position: relative;
+	margin: 8px;
+	left: -32px;
+	width: 350px;
+	color: RGB(256,256,256);
+}
+.biochemistry_top_sharer_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_top_sharer_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_top_sharer_ul_li_items_img{
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+.biochemistry_top_sharer_ul_li_item_name{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 150px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+}
+.biochemistry_top_sharer_ul_li_items_t{
+	color: RGB(120,120,120);
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+	width: 140px;
+	text-align: right; 
+	vertical-align: middle;
+}
+/********************更多功能*****************************/
+.biochemistry_more_function{
+	position: absolute;
+	z-index: 3;
+	top: 149%;
+	left: 5%;
+	background-color: white;
+	border-radius: 5px;
+	width: 1545px;
+}
+.biochemistry_more_function_blue_bar{
+	border-left: thick solid #14b9ce;
+  border-right: thick solid #14b9ce;
+  border-radius: 0.3rem;
+  background-color: #14b9ce;
+}
+.biochemistry_more_function_title{
+	padding-left: 8px;
+}
+.biochemistry_more_function_blue_bar_ul{
+	margin-top:-10px;
+	margin-left: 13px;
+    height: 150px; /* 设置列表的高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+.biochemistry_more_function_blue_bar_ul_li{
+	float: left;
+	width: 80px;
+	margin-right: 50px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items{
+	height: 21px;
+	position: relative;
+	left: -25px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items:hover{
+	position: relative;
+	left: -25px;
+	color: #14b9ce;
+}
+.biochemistry_more_function_blue_bar_ul_li_items_img{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 40px;
+	height: 40px;
+}
+.biochemistry_more_function_blue_bar_ul_li_items_name{
+	float: left;
+	margin-left: -1px;
+	margin-top: 5px;
+	width: 80px;
+	white-space: nowrap; /* 确保文本不换行 */
+	overflow: hidden; /* 隐藏超出容器的内容 */
+	text-overflow: ellipsis; /* 超出部分显示为省略号 */
+	text-align: center;
+}
+/**************************************************/
+.user_content {
+  width: 100vw;
+  height: 100vh;
+  background-color: RGB(247,247,247);
+  position: relative;
+}
+.user_content .login-wrapper {
+  width: 60vw;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 40px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  	box-shadow: 5px 5px 10px RGB(200,200,200), -5px -5px 10px RGB(150,150,150);
+}
+.user_content .login-wrapper .left-img {
+  border-radius: 40px;
+  flex: 1;
+  background: url(../images/kitty.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.user_content .login-wrapper .left-img .glass {
+  width: 60%;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+}
+.user_content .login-wrapper .left-img .glass .tips .title {
+
+  width: 25%;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+}
+.user_content .login-wrapper .left-img .glass .tips h1 {
+	font-family:"幼圆"; 
+  margin: 15px 0;
+}
+.user_content .login-wrapper .left-img .glass .tips span {
+  margin: 5px 0;
+  display: block;
+  font-weight: 100;
+}
+.user_content .login-wrapper .right-login-form {
+  flex: 1;
+  position: relative;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.user_content .login-wrapper .right-login-form .form-wrapper h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items {
+  margin: 20px 0;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .input-tips {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .inputs_1 {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.5s;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .inputs_2 {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.5s;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .inputs_1:focus {
+  border: 1px solid rgb(128, 106, 196);
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .inputs_2:focus {
+  border: 1px solid rgb(128, 106, 196);
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .input-items .forgot {
+  float: right;
+  font-weight: 600;
+  text-align: right;
+  margin: 5px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .btn {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(128, 106, 196);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .siginup-tips {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .siginup-tips span:last-child {
+  color: rgb(110, 87, 179);
+  cursor: pointer;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .divider {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .divider .line {
+  display: inline-block;
+  max-width: 35%;
+  width: 35%;
+  flex: 1;
+  height: 1px;
+  background-color: rgb(162, 172, 185);
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .divider .divider-text {
+  vertical-align: middle;
+  margin: 0 20px;
+  display: inline-block;
+  width: 50px;
+  color: rgb(162, 172, 185);
+  white-space: normal;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item {
+  width: 70px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(51, 49, 116);
+  margin: 0 10px;
+  transition: 0.4s;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item span {
+  vertical-align: middle;
+}
+.user_content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item:hover {
+  width: 80px;
+  height: 50%;
+  background-color: #fff;
+  border: 0;
+  box-shadow: 1px 10px 32px 1px rgba(186, 175, 221, 0.37);
+}
+
+@media (max-width: 1024px) {
+  .login-wrapper {
+    padding: 20px;
+  }
+  .login-wrapper .left-img {
+    display: none;
+  }
+  .login-wrapper .right-login-form {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

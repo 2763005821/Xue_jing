@@ -16,6 +16,9 @@ var server=http.createServer(function(req, res) {
 	let func=url.parse(req.url, true).query.func;
 	let id=url.parse(req.url, true).query.count;
 	let pwd=url.parse(req.url, true).query.pwd;
+	/*文章查询*/
+	let name=url.parse(req.url, true).query.name;
+
 	console.log(func,id,pwd);
 // 3 建立连接
 connection.connect((err) => {
@@ -28,7 +31,8 @@ connection.connect((err) => {
   console.log('connected as id ' + connection.threadId);
 });
 // 4 增删改查
-//从前端传递的func用来判断登录还是注册
+//接收从前端传递的请求，并且通过func用来判断登录还是注册
+/*func=1，登录请求*/
 if(func==1){
 	var i ="SELECT * FROM mydb.user WHERE id="+id+" and pwd="+pwd+";";
 	connection.query( i, (error, results, fields) => {
@@ -41,7 +45,7 @@ if(func==1){
 			  console.log("id: ",row.id);
 			});
 			/************************/
-			let values={status:1,data:[12,34,89]}
+			let values={status:1,data:[12,34,89],results}
 			user=1;
 			console.log("user状态:");
 			console.log(user);
@@ -55,6 +59,7 @@ if(func==1){
 			res.end(JSON.stringify(values));
 			return 0;
 	}})}
+/*func=2，注册请求*/
 else if(func==2){
 	var i ="INSERT INTO user VALUES ("+id+","+pwd+",null,null,null,null)"
 	connection.query( i, (error, results, fields) => {
@@ -79,6 +84,34 @@ else if(func==2){
 			res.end(JSON.stringify(values));
 	  }
 	})
+}
+/*func=3，关键字检索文章请求*/
+else if(func==3){
+	var i ="SELECT * FROM articles WHERE keyword LIKE '%"+name+"%'"
+	connection.query( i, (error, results, fields) => {
+	  if (error) throw error;
+	  if(results[0]){					/*如果查询到*/
+		  var status=1;
+		  console.log("数据库检测到文章");
+		  console.log('The result is: ', results);
+		  results.forEach((row)=>{
+			  console.log("id: ",row.id);
+			});
+			/************************/
+			let values={status:1,results}
+			user=1;
+			console.log("user状态:");
+			console.log(user);
+			console.log("登陆成功\n**************************************************\n");
+			res.end(JSON.stringify(values));
+	  }
+		else{					/*未查询到文章*/
+			var status=0;
+			let values={status:0}
+			console.log("未查询到文章");
+			res.end(JSON.stringify(values));
+			return 0;
+	}})
 }
  
 //调试：当id=0时，断开连接

@@ -35,7 +35,9 @@
 		<div class="white_bar"></div>
 		<form class="search1"target="_blank" method="get" action="https://www.baidu.com/s">
 				<input type="text" placeholder="请输入关键词" name="word" class="text"/>
+				<button><svg t="1714182500976" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4278" width="50" height="50"><path d="M456.32 176a312.32 312.32 0 1 1-312.32 312.32 312.32 312.32 0 0 1 312.32-312.32m0-64A376.32 376.32 0 1 0 832 488.32a376.32 376.32 0 0 0-375.68-376.32z" fill="#2c2c2c" p-id="4279"></path><path d="M709.76 709.76a32 32 0 0 0-22.4 54.4l181.12 181.12a32 32 0 0 0 45.44-45.44l-181.12-181.12a32 32 0 0 0-22.4-9.6z" fill="#2c2c2c" p-id="4280"></path></svg></button>
 				<input type="submit" value="搜索" class="search_main"></form>
+
 			<div class="upload"><a href=""title=""style="text-decoration: none; color: black">
 				<img class="upload_1"src="./icons/upload2.png"></a></div>
 			<div class="messages"><a href=""title=""style="text-decoration: none; color: black">
@@ -73,7 +75,7 @@
 						<a href="users.html"><img class="upload_1"src="./icons/myself.png"></a>
 						<div class="clear"></div>
 						<ul class="123"name="username">
-							<li><a href="styles.html">个人中心</a></li>
+							<li><a href="user_hub.html">个人中心</a></li>
 							<li><a href="tables.html">投稿管理</a></li>
 						   <li><a href="typography.html">动态</a></li>
 						   <li><a href="flexible_columns.html">历史</a></li>

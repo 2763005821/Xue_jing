@@ -26,7 +26,6 @@
 <body>
 	<!--网页全体-->
 	<div class="all">
-		<div class="background-container"></div>
 		<!--左上角logo-->
 		<div class="logo">
 			<a href="./index.html"title=""style="text-decoration: none; color: black">
@@ -168,6 +167,9 @@
                         </li>-->
 				</ul>
 			</div>
+	<!--主体-->
+	<div class="user_hub_main">
+	</div>
 
 
 

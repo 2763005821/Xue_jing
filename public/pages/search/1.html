@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Database</title>
+</head>
+<body>
+  <form action="/search" method="post">
+    <input type="text" name="search" placeholder="Enter search term">
+    <button type="submit">Search</button>
+  </form>
+  <div id="results"></div>
+ 
+  <script>
+    const form = document.querySelector('form');
+    const resultsDiv = document.getElementById('results');
+ 
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const searchTerm = document.querySelector('input[name="search"]').value;
+      fetch('/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `search=${encodeURIComponent(searchTerm)}`
+      })
+      .then(response => response.json())
+      .then(data => {
+        resultsDiv.innerHTML = ''; // 清空之前的结果
+        if (data.length === 0) {
+          resultsDiv.innerHTML = '<p>No results found.</p>';
+        } else {
+          data.forEach(item => {
+            const result = document.createElement('p');
+            result.textContent = `ID: ${item.id}, Name: ${item.name}`;
+            resultsDiv.appendChild(result);
+          });
+        }
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>

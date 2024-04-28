@@ -145,25 +145,8 @@
 			 <input  id="search_main"class="biochemistry_search-input" onkeyup="filterList()"type="text" name="query" placeholder="请输入实验名称...">
 			<input class="biochemistry_search-button"type="submit" value="搜索">
 		 </form></div></div>
-<script>
-function filterList() {
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('search_main');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("biochemistry_search_ul");
-  li = ul.getElementsByTagName('li');
- 
-  for (i = 0; i < li.length; i++) {
-    a = li[i].textContent || li[i].innerText;
-    txtValue = a.toUpperCase();
-    if (txtValue.indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
+
+
 			
 		 <div class="biochemistry_daily_push">
 		<h2 style="margin-left: 20px;">
@@ -262,7 +245,129 @@ function filterList() {
 					<div class="biochemistry_daily_push_blue_bar_item_text">形态特征雄性成鸟:体羽大部为褐色，羽缘棕白色，形成鳞状花纹。自前额伸达后枕两侧的眉纹棕白色，贯眼纹棕褐色，杂有细微的黑色点斑;颊部及颈侧淡棕白，杂有黑褐色细纹;</div></div></div></li>
 		<hr class="biochemistry_daily_push_ul_li_line"><!--条目分隔线-->
 		</ul></div>
-
+<script>
+// 将http请求的UTF8编码转成汉字字符串
+function revertUTF8(szInput) {
+	var x,wch,wch1,wch2,uch="",szRet="";
+	for (x=0; x<szInput.length; x++) {
+		if (szInput.charAt(x)=="%") {
+			wch =parseInt(szInput.charAt(++x) + szInput.charAt(++x),16);
+			if (!wch) {break;}
+			if (!(wch & 0x80)) {
+				wch = wch;
+			} else if (!(wch & 0x20)) {
+				x++;
+				wch1 = parseInt(szInput.charAt(++x) + szInput.charAt(++x),16);
+				wch  = (wch & 0x1F)<< 6;
+				wch1 = wch1 & 0x3F;
+				wch  = wch + wch1;
+			} else {
+				x++;
+				wch1 = parseInt(szInput.charAt(++x) + szInput.charAt(++x),16);
+				x++;
+				wch2 = parseInt(szInput.charAt(++x) + szInput.charAt(++x),16);
+				wch  = (wch & 0x0F)<< 12;
+				wch1 = (wch1 & 0x3F)<< 6;
+				wch2 = (wch2 & 0x3F);
+				wch  = wch + wch1 + wch2;
+			}
+			szRet += String.fromCharCode(wch);
+		} else {
+			szRet += szInput.charAt(x);
+		}
+	}
+	return(szRet);
+}
+	/*这里是检测URL里是否出现?uname=**（登陆成功），成功后执行以下代码*/
+	document.addEventListener('DOMContentLoaded', (event) => {
+		 // DOM完全加载和解析完成后执行的代码
+	  var name = location.search;
+		// var name = decodeURI(document.URL)//获取到编码的数据并进行解码，推荐
+		//获取到的数据其实是  ?uname=zhangsan'
+		//下面是对数据进行处理
+		name=name.slice(name.indexOf("=")+1)
+		//utf-8转换为汉字
+		name=revertUTF8(name);
+		console.log(name);
+		if (name)
+		{
+			console.log(name);
+			/*向服务器发送查询请求{查询内容：name,状态：3(查询)}*/
+			/*目标服务器: localhost:8976         目标数据库: mydb.articles*/
+			let ht = new XMLHttpRequest( ) 
+			ht.open("get",`http://localhost:8976?&name=${name}&func=3`)
+			ht.send()
+			ht.onreadystatechange = function( ){			
+				if(ht.readyState == 4 && ht.status == 200){
+				try{
+					console.log(JSON.parse(ht.responseText));
+					ID=JSON.parse(ht.responseText);
+					console.log("ID:");
+					console.log(ID.status);
+					/*服务器返回status=1，意味着查询成功，否则status=0*/
+					if (ID.status==1)
+					{
+						var userList = document.getElementById("biochemistry_search_ul");
+						userList.innerHTML="";
+						/*对每个查询条目，我们执行以下操作*/
+						ID.results.forEach((row)=>{
+							console.log("keyword: ",row.keyword)
+							/*动态创建条目*/
+							var list=document.createElement("li");
+							userList.appendChild(list);
+								var hr_1=document.createElement("hr");
+									hr_1.className="biochemistry_daily_push_ul_li_line";
+									list.appendChild(hr_1);
+								var biochemistry_daily_push_blue_bar_items=document.createElement("div");
+									biochemistry_daily_push_blue_bar_items.className="biochemistry_daily_push_blue_bar_items";
+									list.appendChild(biochemistry_daily_push_blue_bar_items);
+								var a=document.createElement("a");
+									a.href=row.location;
+									biochemistry_daily_push_blue_bar_items.appendChild(a);
+								var biochemistry_daily_push_blue_bar_img=document.createElement("img");
+									biochemistry_daily_push_blue_bar_img.className="biochemistry_daily_push_blue_bar_img";
+									biochemistry_daily_push_blue_bar_img.src=row.img_location;
+									a.appendChild(biochemistry_daily_push_blue_bar_img);
+								var biochemistry_daily_push_blue_bar_item=document.createElement("div");
+									biochemistry_daily_push_blue_bar_item.className="biochemistry_daily_push_blue_bar_item";
+									biochemistry_daily_push_blue_bar_items.appendChild(biochemistry_daily_push_blue_bar_item);
+								var biochemistry_daily_push_blue_bar_item_name=document.createElement("div");
+									biochemistry_daily_push_blue_bar_item_name.className="biochemistry_daily_push_blue_bar_item_name";
+									biochemistry_daily_push_blue_bar_item.appendChild(biochemistry_daily_push_blue_bar_item_name);
+								var a=document.createElement("a");
+									a.href=row.location;
+									a.innerHTML=row.name;
+									a.className="121"
+									biochemistry_daily_push_blue_bar_item_name.appendChild(a);
+								var biochemistry_daily_push_blue_bar_item_eng=document.createElement("div");
+									biochemistry_daily_push_blue_bar_item_eng.className="biochemistry_daily_push_blue_bar_item_eng";
+									biochemistry_daily_push_blue_bar_item_eng.innerHTML="english";
+									biochemistry_daily_push_blue_bar_item.appendChild(biochemistry_daily_push_blue_bar_item_eng);
+								var biochemistry_daily_push_blue_bar_item_text=document.createElement("div");
+									biochemistry_daily_push_blue_bar_item_text.className="biochemistry_daily_push_blue_bar_item_text";
+									biochemistry_daily_push_blue_bar_item_text.innerHTML=row.description;
+									biochemistry_daily_push_blue_bar_item.appendChild(biochemistry_daily_push_blue_bar_item_text);				
+						})
+					}
+					if(ID.status==0)
+					{
+						
+					}
+				}catch(error){
+					console.log("无法转换")
+				}
+				}
+		}
+		}
+	});
+		var userList = document.getElementById("biochemistry_search_ul");
+		userList.innerHTML="";
+		var list=document.createElement("li");
+		userList.appendChild(list);
+		var hr_1=document.createElement("hr");
+		hr_1.className="biochemistry_daily_push_ul_li_line";
+		list.appendChild(hr_1);
+</script>
 <!--------------------------------------------->
 <div class="search_end_plus">
 			<div class="end_plus_title">
@@ -308,5 +413,6 @@ function filterList() {
 				<a href="#top"title=""style="text-decoration: none; color: RGB(0,160,230);">回到顶部</p></div>
 
 	</div>
+
 </body>
 </html>

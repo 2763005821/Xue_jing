@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script src="../javascripts/vue.js"></script>										<!--引入vue.js-->
+</head>
+<body>
+	<ul id="a">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<script>
+		var userList = document.getElementById("a");
+		userList.innerHTML="";
+		var list=document.createElement("li");
+		list.textContent="sadfasdf";
+		userList.appendChiild(list);
+	</script>
+</body>
+
+</html>
