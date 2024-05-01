@@ -2,7 +2,11 @@
 	position: absolute;
 	top: 8%;
 	left: 20%;
-
+}
+.user_hub_upper:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .user_hub_upper_img{
 	width: 1200px;
@@ -14,8 +18,19 @@
 	left: 1100px;
 	top: 50px;
 	display: inline-block;		/*自适应宽度*/
-	color: white;
-	font-size: 18px;
+	color: RGB(220,220,220);
+	font-size: 17px;
+	padding: 8px;
+	background-color: rgba(0,0,0,.2); 
+	border-radius: 5px;
+}
+.user_hub_upper_img_change{
+	position: relative;
+	left: -60px;
+	top: 50px;
+	display: inline-block;		/*自适应宽度*/
+	color: RGB(220,220,220);
+	font-size: 17px;
 	padding: 8px;
 	background-color: rgba(0,0,0,.2); 
 	border-radius: 5px;
@@ -71,7 +86,7 @@
 	float: left;	
 	margin-top: 15px;
 	margin-left: 5px;
-		display: inline-block;		/*自适应宽度*/
+	display: inline-block;		/*自适应宽度*/
 
 }
 .user_hub_upper_user_white_bar_profession{
@@ -86,9 +101,10 @@
 .user_hub_upper_user_white_bar_edit{
 
 	display: inline-block;		/*自适应宽度*/
+	font-size: 15px;
 	position: relative;
 	padding: 10px;
-	border: 2px solid #14b9ce;
+	border: 1px solid #14b9ce;
 	top: -180px;
 	left: 1030px;
 	border-radius: 5px;
@@ -98,4 +114,153 @@
 }
 .user_hub_upper_user_white_bar_edit_a{
 	color: black;
+}
+/*********************************************/
+.user_hub_middle{
+ position: relative;
+ top: 0px;
+}
+.user_hub_middle_ul{
+	height: 1800px;
+/*	border: 2px solid #14b9ce;  */
+	width: 800px;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+}
+
+.user_hub_middle_ul_li{
+	float: left;
+	margin-top: 15px;
+	margin-right: 50px;
+	font-size: 18px;
+}
+.user_hub_middle_ul_li_content{
+	position: relative;
+	left: -80px;
+	top: 30px;
+}
+.user_hub_middle_ul_li_content_ul_li_line{
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 770px;
+	border: 0.5px solid RGB(230,230,230);
+}
+
+.user_hub_middle_ul_li_content_ul_li_box{
+	float: left;
+	width: 842px;
+/*	border: 1px solid red;  */
+	padding-bottom: 20px;
+}
+.user_hub_middle_ul_li_content_ul_li_box_status{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 500px;
+	display: inline-block;		/*自适应宽度*/
+	color: RGB(100,100,100);
+}
+.user_hub_middle_ul_li_content_ul_li_box_time{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	color: RGB(100,100,100);
+}
+.user_hub_middle_ul_li_content_ul_li_box_title{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 500px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.user_hub_middle_ul_li_content_ul_li_box_user{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.user_hub_middle_ul_li_content_ul_li_box_user_img{
+	float: left;
+	width: 45px;
+	object-fit: scale-down; /* 保持图片原有尺寸不变，不会被拉伸 */
+}
+.user_hub_middle_ul_li_content_ul_li_box_user_name{
+	float: left;
+	margin-left: 15px;
+	margin-right: 650px;
+	font-weight: bold;
+}
+.user_hub_middle_ul_li_content_ul_li_box_user_slogan{
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-right: 650px;
+	color: RGB(80,80,80);
+}
+.user_hub_middle_ul_li_content_ul_li_box_img{
+	float: left;
+	height: 100px;
+	margin-left: 20px;
+	margin-top: 20px;
+	object-fit: scale-down; /* 保持图片原有尺寸不变，不会被拉伸 */
+}
+.user_hub_middle_ul_li_content_ul_li_box_content{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 600px;
+	height: 100px;
+	line-height: 1.5;
+
+}
+.user_hub_middle_ul_li_content_ul_li_box_box{
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 700px;
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_approve{
+	float: left;
+	background-color:  rgba(20,185,206,0.1);
+	text-align: center;
+	width: 120px;
+	height: 28px;
+	padding-top: 8px;
+	color: #14b9ce;
+	border-radius: 5px;
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_disapprove{
+	float: left;
+	margin-left: 10px;
+	background-color:  rgba(20,185,206,0.1);
+	text-align: center;
+	width: 80px;
+	height: 28px;
+	padding-top: 8px;
+	color: #14b9ce;
+	border-radius: 5px;
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_chat{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: RGB(80,80,80);
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_share{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: RGB(80,80,80);
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_favorite{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: RGB(80,80,80);
+}
+.user_hub_middle_ul_li_content_ul_li_box_box_more{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: RGB(80,80,80);
 }
