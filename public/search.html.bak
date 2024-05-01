@@ -141,7 +141,7 @@
 <!--网站主体-->
 		<div class="id">
 		<div class="biochemistry_search-form">
-			  <form id="biochemistry_searchForm" action="search.heml" method="get">
+			  <form id="biochemistry_searchForm" action="search.html" method="get">
 			 <input  id="search_main"class="biochemistry_search-input" onkeyup="filterList()"type="text" name="query" placeholder="请输入实验名称...">
 			<input class="biochemistry_search-button"type="submit" value="搜索">
 		 </form></div></div>
@@ -295,7 +295,7 @@ function revertUTF8(szInput) {
 			/*向服务器发送查询请求{查询内容：name,状态：3(查询)}*/
 			/*目标服务器: localhost:8976         目标数据库: mydb.articles*/
 			let ht = new XMLHttpRequest( ) 
-			ht.open("get",`http://localhost:8976?&name=${name}&func=3`)
+			ht.open("get",`http://10.128.210.11:8976?&name=${name}&func=3`)
 			ht.send()
 			ht.onreadystatechange = function( ){			
 				if(ht.readyState == 4 && ht.status == 200){

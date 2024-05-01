@@ -295,7 +295,7 @@ function revertUTF8(szInput) {
 			/*向服务器发送查询请求{查询内容：name,状态：3(查询)}*/
 			/*目标服务器: localhost:8976         目标数据库: mydb.articles*/
 			let ht = new XMLHttpRequest( ) 
-			ht.open("get",`http://localhost:8976?&name=${name}&func=3`)
+			ht.open("get",`http://192.168.157.143:8976?&name=${name}&func=3`)
 			ht.send()
 			ht.onreadystatechange = function( ){			
 				if(ht.readyState == 4 && ht.status == 200){

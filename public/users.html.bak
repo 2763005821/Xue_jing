@@ -9,8 +9,6 @@
 	<link rel="stylesheet"href="./stylesheet/main.css">								<!--内容-->
 
 	<!--主体-->
-	<script src="user.js" defer></script>
-	<script src="./javascripts/ip.js"></script>							<!--ip功能-->
 	<link rel="stylesheet"href="./stylesheet/user_message_box.css">								<!--内容-->
 						<!--内容-->
     <link rel="stylesheet" href="./stylesheet/user.css">
@@ -204,9 +202,10 @@ function show(){
                     <button class="btn"onclick="submit()"type="submit">登录</button>
 
 <script>
+
 	function ajax(count,pwd){
 		let ht = new XMLHttpRequest( ) 
-		ht.open("get",`http://localhost:8976?count=${count}&pwd=${pwd}&func=1`)
+		ht.open("get",`http://192.168.157.143:8976?count=${count}&pwd=${pwd}&func=1`)
 		ht.send()
 		ht.onreadystatechange = function( ){			
 			if(ht.readyState == 4 && ht.status == 200){
@@ -217,7 +216,8 @@ function show(){
 				console.log(ID.status);
 				if (ID.status==1)
 				{
-					window.location.href = 'http://localhost:3000/index.html?' + 'uname=' + 'FYC';
+
+					window.location.href = 'http://192.168.157.143:3000/index.html?' + 'key=' + ID.key.;
 				}
 				if(ID.status==0)
 				{
@@ -227,7 +227,7 @@ function show(){
 				console.log("无法转换")
 			}
 			}
-		}*/
+		}
 }
 var submit=function(){
 	let count_pwd = document.querySelectorAll(".inputs_1")

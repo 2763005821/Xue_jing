@@ -57,13 +57,39 @@
 		//获取到的数据其实是  ?uname=zhangsan'
 		//下面是对数据进行处理
 		name=name.slice(name.indexOf("=")+1)
-		if (name=="FYC")
+		if (name)
 		{
-			 console.log(name);
-			var items=document.getElementsByName("username");
-			console.log("是这里:"+items);
-			items[0].style.display='block';
-			var items=document.getElementsByName("username");
+			console.log(name)
+			/*向服务器发送查询请求{查询内容：name,状态：3(查询)}*/
+			/*目标服务器: localhost:8976         目标数据库: mydb.user*/
+			let ht = new XMLHttpRequest( ) 
+			ht.open("get",`http://192.168.157.143:8976?&key=${name}&func=4`)
+			ht.send()
+			ht.onreadystatechange = function( ){			
+				if(ht.readyState == 4 && ht.status == 200){
+					try{
+						console.log(JSON.parse(ht.responseText));
+						ID=JSON.parse(ht.responseText);
+						console.log("ID:");
+						console.log(ID.status);
+						/*服务器返回status=1，意味着查询成功，否则status=0*/
+						if (ID.status==1)
+						{
+							console.log(name);
+							var items=document.getElementsByName("username");
+							console.log("是这里:"+items);
+							items[0].style.display='block';
+							var items=document.getElementsByName("username");
+						}
+						if(ID.status==0)
+						{
+
+						}
+					}catch(error){
+						console.log("无法转换")
+					}
+				}
+			}
 		}
 	});
   

@@ -81,7 +81,7 @@ connection.end();*/
 		var real_url=request.url;
 	}
 
-	console.log("request.url: "+request.url)
+	console.log("\n"+"request.url: "+request)
 	console.log("real_url: "+real_url);
 
 	name=request.url;

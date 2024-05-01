@@ -193,14 +193,14 @@ form .search_main {
 }
 .navigation1 > ul > li > ul{
 	  position:absolute;
-	  top:100px;
+	  top: 0px;
     transition: opacity 0.5s; /* 设置渐变效果 */
 	transition : 0.5s;
     opacity: 0; /* 初始化透明度为0，即不可见 */
 }
 .navigation1 > ul > li:hover ul{
 	  position:absolute;
-	  top:100px;
+	  top: 20px;
 	opacity: 1; /* 鼠标经过时设置透明度为1，即可见 */
 }
 .navigation1 > ul > li > ul > li:hover{
@@ -316,7 +316,7 @@ form .search_main {
 }
 .navigation > ul > li > ul{
 	  position:absolute;
-	  top:100px;
+	  top: 80px;
     transition: opacity 0.5s; /* 设置渐变效果 */
 	transition : 0.5s;
     opacity: 0; /* 初始化透明度为0，即不可见 */
