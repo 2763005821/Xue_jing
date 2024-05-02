@@ -39,7 +39,7 @@
 	float: left;
 	width: 1200px;
 	height: 160px;
-
+	background-color: white;
 	top: 100px;
 	box-shadow: 5px 5px 10px RGB(200,200,200);
 }
@@ -117,8 +117,9 @@
 }
 /*********************************************/
 .user_hub_middle{
- position: relative;
- top: 0px;
+	float: left;
+	margin-top: 10px;
+	background-color: white;
 }
 .user_hub_middle_ul{
 	height: 1800px;
@@ -263,4 +264,229 @@
 	margin-left: 20px;
 	margin-top: 10px;
 	color: RGB(80,80,80);
+}
+/*************************左侧内容************************************/
+.user_hub_left{
+	float: left;
+	width: 350px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+}
+.user_hub_left_create{
+
+}
+.user_hub_left_create_img{
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.user_hub_left_create_title{
+	float: left;
+	margin-left: 15px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+.user_hub_left_create_level{
+	float: left;
+	margin-left: 5px;
+	margin-top: 20px;
+	font-weight: bold;
+	background-color:  rgba(20,185,206,0.1);
+	color: #14b9ce;
+	padding: 5px;
+	border-radius: 4px;
+} 
+.user_hub_left_create_draft{
+	float: right;
+	margin-right: 15px;
+	margin-top: 25px;
+	font-size: 15px;
+	color: RGB(100,100,100);
+}
+.user_hub_left_create_box{
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	width: 322px;
+}
+.user_hub_left_create_box_bar{
+	float: left;
+	margin-top: 10px;
+	height: 70px;
+	width: 2px;
+	background-color: RGB(240,240,240);
+}
+.user_hub_left_create_box_daily_read{
+	float: left;
+	width: 160px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: RGB(250,250,250);
+}
+.user_hub_left_create_box_daily_read_title{
+	text-align: center;
+	font-size: 15px;
+	color: RGB(100,100,100);
+}
+.user_hub_left_create_box_daily_read_num{
+	margin-top: 5px;
+	text-align: center;
+	font-style: bold;
+	font-size: 20px;
+}
+.user_hub_left_create_box_daily_read_sub_title{
+	text-align: center;
+	display: inline-block;		/*自适应宽度*/
+	font-size: 15px;
+	margin-left: 29px;
+	color: RGB(100,100,100);
+	margin-top: 5px;
+}
+.user_hub_left_create_box_daily_read_yesterday{
+	text-align: center;
+	display: inline-block;		/*自适应宽度*/
+	font-size: 15px;
+}
+/**/
+.user_hub_left_create_box_daily_agree{
+	float: left;
+	width: 160px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: RGB(250,250,250);
+}
+.user_hub_left_create_box_daily_agree_title{
+	text-align: center;
+	font-size: 15px;
+	color: RGB(100,100,100);
+}
+.user_hub_left_create_box_daily_agree_num{
+	margin-top: 5px;
+	text-align: center;
+	font-style: bold;
+	font-size: 20px;
+}
+.user_hub_left_create_box_daily_agree_sub_title{
+	text-align: center;
+	display: inline-block;		/*自适应宽度*/
+	font-size: 15px;
+	color: RGB(100,100,100);
+	margin-left: 32px;
+	margin-top: 5px;
+}
+.user_hub_left_create_box_daily_agree_yesterday{
+	text-align: center;
+	display: inline-block;		/*自适应宽度*/
+	font-size: 15px;
+}
+.user_hub_left_create_get_in{
+	float: left;
+	width: 322px;
+	text-align: center;
+	border: 1px solid #14b9ce;
+	color: #14b9ce;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+/********************************************/
+.user_hub_achievement{
+	float: left;
+	width: 350px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+}
+.user_hub_achievement_title{
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: RGB(50,50,50);
+	font-weight: bold;
+}
+.user_hub_achievement_line{
+	float: left;
+	border: 1px solid RGB(240,240,240);
+	width: 347px;
+}
+.user_hub_achievement_agree_img{
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.user_hub_achievement_agree{
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	width: 300px;
+	color: RGB(50,50,50);
+}
+.user_hub_achievement_edit_img{
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.user_hub_achievement_edit{
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: RGB(50,50,50);
+}
+/**********************************************/
+.user_hub_follow_box{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 350px;
+	background-color: white;
+	box-shadow: 5px 5px 10px RGB(200,200,200);
+}
+.user_hub_follow_box_bar{
+	float: left;
+	margin-top: 10px;
+	height: 70px;
+	width: 2px;
+	background-color: RGB(240,240,240);
+}
+.user_hub_left_follow_box_left{
+	float: left;
+	width: 174px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.user_hub_left_follow_left_title{
+	text-align: center;
+	font-size: 15px;
+	color: RGB(100,100,100);
+}
+.user_hub_follow_box_left_num{
+	margin-top: 5px;
+	text-align: center;
+	font-style: bold;
+	font-size: 20px;
+}
+/**/
+.user_hub_follow_box_right{
+	float: left;
+	width: 174px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.user_hub_follow_box_right_title{
+	text-align: center;
+	font-size: 15px;
+	color: RGB(100,100,100);
+}
+.user_hub_follow_box_right_num{
+	margin-top: 5px;
+	text-align: center;
+	font-style: bold;
+	font-size: 20px;
 }
