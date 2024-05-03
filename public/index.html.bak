@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -59,7 +59,6 @@
 		name=name.slice(name.indexOf("=")+1)
 		if (name)
 		{
-			name=JSON.stringify(name)
 			console.log(name)
 			/*向服务器发送查询请求{查询内容：name,状态：3(查询)}*/
 			/*目标服务器: localhost:8976         目标数据库: mydb.user*/
@@ -107,7 +106,7 @@
 						   <li><a href="typography.html">动态</a></li>
 						   <li><a href="flexible_columns.html">历史</a></li>
 						   <li><a href="services.html">创作中心</a></li>
-						   <li><a href="404.html">退出登录</a></li>
+						   <li><a href="index.html">退出登录</a></li>
 					   </ul>
 					</li>
 					</ul>
@@ -120,7 +119,7 @@
    <a href="./all_function.html">全部功能</a>
    <div class="clear"></div>
    <ul class="123">
-       <li><a href="styles.html">Styles</a></li>
+       <li><a href="styles.html">百科</a></li>
        <li><a href="tables.html">Tables</a></li>
        <li><a href="typography.html">Typography</a></li>
        <li><a href="flexible_columns.html">Flexible Columns</a></li>
@@ -132,13 +131,13 @@
    <a href="./subject_frontier.html">学科前沿</a>
    <div class="clear"></div>
    <ul>
-       <li><a href="portfolio.html">研究论文</a></li>
-       <li><a href="portfolio2.html">新闻</a></li>
-       <li><a href="portfolio_detail.html">观点</a></li>
-       <li><a href="portfolio_detail2.html">研究分析</a></li>
-       <li><a href="portfolio_modern.html">生物学职业生涯</a></li>
-       <li><a href="portfolio_open_column.html">视频</a></li>
-       <li><a href="portfolio_single.html">前沿精选</a></li>
+       <li><a href="new_article.html">研究论文</a></li>
+       <li><a href="news.html">新闻</a></li>
+       <li><a href="points.html">观点</a></li>
+       <li><a href="analysis.html">研究分析</a></li>
+       <li><a href="career.html">生物学职业生涯</a></li>
+       <li><a href="video.html">视频</a></li>
+       <li><a href="essential.html">前沿精选</a></li>
    </ul>
 </li>
 <li>
@@ -174,13 +173,16 @@
    <a href="bio_graph.html">生物图鉴</a>
    <div class="clear"></div>
    <ul>
-       <li><a href="blog.html">动物</a></li>
-       <li><a href="blog_detail.html">植物</a></li>
-       <li><a href="blog_detail2.html">微生物</a></li>
+       <li><a href="prokaryote.html">原核动物</a></li>
+       <li><a href="protist.html">原生生物</a></li>
+       <li><a href="plant.html">植物</a></li>
+	   <li><a href="fungi.html">真菌</a></li>
+	   <li><a href="animal.html">动物</a></li>
+	   <li><a href="virus.html">病毒</a></li>
    </ul>
 </li>
 <li>
-   <a href="blog.html">智能检索</a>
+   <a href="ai_search.html">智能检索</a>
    <div class="clear"></div>
    <ul>
 

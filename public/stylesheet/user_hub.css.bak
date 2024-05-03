@@ -411,8 +411,9 @@
 }
 .user_hub_achievement_line{
 	float: left;
-	border: 1px solid RGB(240,240,240);
+	background-color: RGB(230,230,230);
 	width: 347px;
+	height: 1px;
 }
 .user_hub_achievement_agree_img{
 	float: left;
@@ -461,32 +462,68 @@
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
-.user_hub_left_follow_box_daily_read_title{
+.user_hub_left_follow_left_title{
 	text-align: center;
 	font-size: 15px;
 	color: RGB(100,100,100);
 }
-.user_hub_follow_box_daily_read_num{
+.user_hub_follow_box_left_num{
 	margin-top: 5px;
 	text-align: center;
 	font-style: bold;
 	font-size: 20px;
 }
 /**/
-.user_hub_follow_box_daily_agree{
+.user_hub_follow_box_right{
 	float: left;
 	width: 174px;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
-.user_hub_follow_box_daily_agree_title{
+.user_hub_follow_box_right_title{
 	text-align: center;
 	font-size: 15px;
 	color: RGB(100,100,100);
 }
-.user_hub_follow_box_daily_agree_num{
+.user_hub_follow_box_right_num{
 	margin-top: 5px;
 	text-align: center;
 	font-style: bold;
 	font-size: 20px;
+}
+/****************右下侧列表************************/
+.user_hub_right_list{
+	float: left;
+	width: 350px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0px;
+}
+.user_hub_right_list_line{
+	float: left;
+	background-color: RGB(230,230,230);
+	height: 1px;
+	width: 350px;
+}
+.user_hub_right_list_li{
+	width: 350px;
+}
+.user_hub_right_list_li_title{
+	float: left;
+	margin: 15px;
+}
+.user_hub_right_list_li_title_svg{
+	float: left;
+	margin-top: 5px;
+	margin-left: -5px;
+}
+.user_hub_right_list_li_num{
+	float: right;
+	margin: 13px;
+}
+.user_hub_right_list_line_a{
+	color: RGB(50,50,50);
+}
+.user_hub_right_list_line_a:hover{
+	color:  #14b9ce;
 }

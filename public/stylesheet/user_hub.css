@@ -411,8 +411,9 @@
 }
 .user_hub_achievement_line{
 	float: left;
-	border: 1px solid RGB(240,240,240);
+	background-color: RGB(230,230,230);
 	width: 347px;
+	height: 1px;
 }
 .user_hub_achievement_agree_img{
 	float: left;
@@ -489,4 +490,40 @@
 	text-align: center;
 	font-style: bold;
 	font-size: 20px;
+}
+/****************右下侧列表************************/
+.user_hub_right_list{
+	float: left;
+	width: 350px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0px;
+}
+.user_hub_right_list_line{
+	float: left;
+	background-color: RGB(230,230,230);
+	height: 1px;
+	width: 350px;
+}
+.user_hub_right_list_li{
+	width: 350px;
+}
+.user_hub_right_list_li_title{
+	float: left;
+	margin: 13px;
+}
+.user_hub_right_list_li_title_svg{
+	float: left;
+	margin-top: 5px;
+	margin-left: -5px;
+}
+.user_hub_right_list_li_num{
+	float: right;
+	margin: 13px;
+}
+.user_hub_right_list_line_a{
+	color: RGB(50,50,50);
+}
+.user_hub_right_list_line_a:hover{
+	color:  #14b9ce;
 }

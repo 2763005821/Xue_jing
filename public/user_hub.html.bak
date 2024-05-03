@@ -463,7 +463,7 @@
 							<div class="user_hub_left_create_box_daily_agree_title">今日新增赞同数</div>
 							<div class="user_hub_left_create_box_daily_agree_num">833</div>
 							<div class="user_hub_left_create_box_daily_agree_sub_title">昨日数据</div>
-							<div class="user_hub_left_create_box_daily_agree_yesterday">1123</div>
+							<div class="user_hub_left_create_box_daily_agree_yesterday">223</div>
 						</div></a>
 					<a href=""title=""style="text-decoration: none; color: black">
 						<div class="user_hub_left_create_get_in">进入创作中心 ></div></a>
@@ -496,13 +496,50 @@
 						</div></a>
 				</div>
 			</div>
-			
-			<div class="user_hub_right_list">
+			<!--右下侧列表-->
 				<ul class="user_hub_right_list">
-					<div lclass="user_hub_right_list_line"></div>
-					<li></li>
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">关注的课程</div>
+							<svg class="user_hub_right_list_li_title_svg"t="1714693125204" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3465" width="25" height="25"><path d="M710.088991 95.619134H140.18549a83.956141 83.956141 0 0 0-83.82816 82.164394v650.020185a83.828159 83.828159 0 0 1 83.82816-83.82816H710.088991z" fill="#FFDC69" p-id="3466"></path><path d="M71.715161 846.873019H42.023355v-683.423466h1.407801a98.674062 98.674062 0 0 1 96.754334-82.164395h584.237476v677.024371H140.18549a69.494184 69.494184 0 0 0-69.494184 69.494184 16.381686 16.381686 0 0 0 0 2.431656z m-1.023855-664.35416v575.918652A98.034153 98.034153 0 0 1 140.18549 729.513596h555.569525V109.953109H140.18549a70.006112 70.006112 0 0 0-69.494184 68.086383z" fill="#484F59" p-id="3467"></path><path d="M710.088991 743.975553H140.18549a83.828159 83.828159 0 0 0 0 167.656319H710.088991z" fill="#FFFFFF" p-id="3468"></path><path d="M724.422966 925.837865H140.18549a98.162135 98.162135 0 1 1 0-196.324269h584.237476zM140.18549 758.309529a69.494184 69.494184 0 0 0 0 138.988368h555.569525V758.309529z" fill="#484F59" p-id="3469"></path><path d="M303.362441 997.891688l-60.791413-38.522559-60.791413 38.522559V854.040007h121.582826v143.851681z" fill="#FF7A7A" p-id="3470"></path><path d="M167.445639 1023.872018V839.706032h150.250777V1023.872018l-75.125388-47.737257z m75.125389-81.652467l46.457438 29.563825v-103.409394H195.601662v103.537376zM552.543244 784.801787H710.088991v28.66795H552.543244zM333.054247 345.823792h157.417765v28.667951h-157.417765zM275.590364 403.031712h272.473513v28.66795H275.590364z" fill="#484F59" p-id="3471"></path><path d="M133.914375 837.274375H710.088991v28.667951H133.914375zM119.5804 103.681995H148.248351v635.0463H119.5804z" fill="#484F59" p-id="3472"></path><path d="M911.532537 271.08235L926.634404 255.980483a140.780115 140.780115 0 0 0 0-198.499962L925.098621 55.43281a140.780115 140.780115 0 0 0-198.499962 0l-15.613795 15.101867-14.973885-15.101867a140.780115 140.780115 0 0 0-198.499962 0l-2.175692 2.047711a140.780115 140.780115 0 0 0 0 198.499962l15.101867 15.101867 200.547672 200.547672z" fill="#FF7A7A" p-id="3473"></path><path d="M700.874292 481.740594L485.224753 266.091055a154.858126 154.858126 0 0 1 0-218.721106l2.175693-2.047711a154.602162 154.602162 0 0 1 218.721105 0l4.863313 4.991295 4.991295-4.991295a154.602162 154.602162 0 0 1 218.721106 0l2.047711 2.047711a154.858126 154.858126 0 0 1 0 218.721106L721.095436 481.740594z m-104.177285-453.056006a125.038338 125.038338 0 0 0-89.587345 36.858794l-2.175693 2.047711a126.318158 126.318158 0 0 0 0 178.278818l206.050895 205.538967 205.538968-205.538967a126.190176 126.190176 0 0 0 0-178.278818l-2.047711-2.047711a126.190176 126.190176 0 0 0-178.278818 0L721.095436 80.645249h-20.221144L685.772426 65.543382a124.782374 124.782374 0 0 0-89.075419-36.858794z" fill="#484F59" p-id="3474"></path><path d="M535.64963 225.904731a14.333975 14.333975 0 0 1-10.110572-4.223403 97.522225 97.522225 0 0 1 0-137.708549l2.047711-1.919729a96.882315 96.882315 0 0 1 68.982257-28.667951 14.333975 14.333975 0 0 1 0 28.667951A68.982256 68.982256 0 0 0 547.679931 102.402176l-1.919729 2.04771a68.854274 68.854274 0 0 0 0 97.13828 14.333975 14.333975 0 0 1 0 20.349125 14.589939 14.589939 0 0 1-10.110572 3.96744z" fill="#484F59" p-id="3475"></path></svg>
+							<div class="user_hub_right_list_li_num">4</div></a>
+					</li>
+
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">关注的话题</div>
+							<div class="user_hub_right_list_li_num">7</div></a>
+					</li>
+
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">关注的专栏</div>
+							<div class="user_hub_right_list_li_num">1</div></a>
+					</li>
+
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">关注的问题</div>
+							<div class="user_hub_right_list_li_num">33</div></a>
+					</li>
+
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">关注的收藏夹</div>
+							<div class="user_hub_right_list_li_num">0</div></a>
+					</li>
+
+					<li class="user_hub_right_list_li">
+					<div class="user_hub_right_list_line"></div>
+						<a class="user_hub_right_list_line_a"href=""title=""style="text-decoration: none;">
+							<div class="user_hub_right_list_li_title">个人主页被浏览654,157</div></a>
+					</li>
 				</ul>
-			</div>
 
 
 	</div>
